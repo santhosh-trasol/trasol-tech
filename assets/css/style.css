@@ -1,0 +1,7037 @@
+/*** 
+
+====================================================================
+	Reset
+====================================================================
+
+ ***/
+
+* {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   padding: 0px;
+   margin: 0px;
+}
+
+/*** 
+
+====================================================================
+	Global Settings
+====================================================================
+
+ ***/
+
+html {
+   scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+   Typography
+--------------------------------------------------------------*/
+
+body {
+   width: 100%;
+   height: 100%;
+   font-size: 16px;
+   font-weight: 400;
+   position: relative;
+   z-index: 1;
+   background: #FFF;
+   overflow-x: hidden;
+   font-family: 'Roboto', sans-serif;
+}
+
+.modal-open {
+   overflow-y: auto !important;
+   padding-right: 0px !important;
+}
+
+a,
+a:hover {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+ul,
+li {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+p {
+   font-size: 17px;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #383838;
+}
+
+@media screen and (max-width:768px) {
+
+   p {
+      font-size: 16px;
+   }
+
+}
+
+/*--------------------------------------------------------------
+   Section Divider Margin
+--------------------------------------------------------------*/
+
+.Section-padding {
+   padding: 80px 0px;
+}
+
+.Section-margin {
+   margin: 80px 0px;
+}
+
+@media screen and (max-width:768px) {
+
+   .Section-padding {
+      padding: 60px 0px;
+   }
+
+   .Section-margin {
+      margin: 60px 0px;
+   }
+}
+
+.Mtb-100 {
+   margin: 100px 0px;
+}
+
+.Ptb-100 {
+   padding: 100px 0px;
+}
+
+.Mtb-90 {
+   margin: 90px 0px;
+}
+
+.Ptb-90 {
+   padding: 90px 0px;
+}
+
+.Mtb-80 {
+   margin: 80px 0px;
+}
+
+.Ptb-80 {
+   padding: 80px 0px;
+}
+
+.Mtb-70 {
+   margin: 70px 0px;
+}
+
+.Ptb-70 {
+   padding: 70px 0px;
+}
+
+.Mtb-60 {
+   margin: 60px 0px;
+}
+
+.Ptb-60 {
+   padding: 60px 0px;
+}
+
+.Mtb-50 {
+   margin: 50px 0px;
+}
+
+.Ptb-50 {
+   padding: 50px 0px;
+}
+
+.Mtb-40 {
+   margin: 40px 0px;
+}
+
+.Ptb-40 {
+   padding: 40px 0px;
+}
+
+.Mtb-30 {
+   margin: 30px 0px;
+}
+
+.Ptb-30 {
+   padding: 30px 0px;
+}
+
+.Mtb-20 {
+   margin: 20px 0px;
+}
+
+.Ptb-20 {
+   padding: 20px 0px;
+}
+
+.Mtb-10 {
+   margin: 10px 0px;
+}
+
+.Ptb-10 {
+   padding: 10px 0px;
+}
+
+.Mt-0 {
+   margin-top: 0px;
+}
+
+.Pt-0 {
+   padding-top: 0px;
+}
+
+.Mb-0 {
+   margin-bottom: 0px;
+}
+
+.Pb-0 {
+   padding-bottom: 0px;
+}
+
+@media screen and (max-width:768px) {
+
+   .Mtb-100 {
+      margin: 60px 0px;
+   }
+
+   .Ptb-100 {
+      padding: 60px 0px;
+   }
+
+   .Mtb-80 {
+      margin: 60px 0px;
+   }
+
+   .Ptb-80 {
+      padding: 60px 0px;
+   }
+
+   .Mtb-70 {
+      margin: 60px 0px;
+   }
+
+   .Ptb-70 {
+      padding: 60px 0px;
+   }
+}
+
+/*--------------------------------------------------------------
+   Section Title and Section Before
+--------------------------------------------------------------*/
+
+.Section-title h1 {
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 44px;
+   color: #0e0e0e;
+   margin-bottom: 25px;
+   position: relative;
+   width: 100%;
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+}
+
+.Section-subtitle p {
+   color: #0e0e0e;
+   font-size: 16px;
+   font-weight: 500;
+   margin-bottom: 10px;
+   position: relative;
+   font-family: "Roboto", Sans-serif;
+}
+
+/* ------  h1 Padding when using Section Before class ------ */
+.Section-title.Section-before h1 {
+   padding-left: 80px;
+}
+
+.Section-subtitle.Section-subefore p {
+   padding-left: 75px;
+}
+
+/* ------  Add Section-before class with Section Title for heading left line ------ */
+.Section-title.Section-before h1:before {
+   content: "";
+   width: 54px;
+   height: 3px;
+   position: absolute;
+   top: 20px;
+   left: 0;
+   background-color: #d1651a;
+}
+
+.Section-subtitle.Section-subefore p:before {
+   content: "";
+   width: 50px;
+   height: 3px;
+   position: absolute;
+   top: 50%;
+   transform: translate(0, -50%);
+   left: 0;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+   -webkit-box-shadow: 0 7px 16px rgba(12, 12, 12, 0.22);
+   box-shadow: 0 7px 16px rgba(12, 12, 12, 0.22);
+}
+
+/* ------  Add SecBefore-para for Padding when using Section Before class ------ */
+.SecBefore-para {
+   padding-left: 80px;
+}
+
+@media (max-width: 992px) {
+
+   /* ------  Section Title  ------ */
+   .Section-title h1 {
+      font-size: 30px;
+   }
+
+   .Section-title.Section-before h1 {
+      padding-left: 68px;
+   }
+
+   .SecBefore-para {
+      padding-left: 68px;
+   }
+}
+
+@media (max-width: 768px) {
+
+   /* ------  Section Title  ------ */
+   .Section-title h1 {
+      font-size: 25px;
+      line-height: 38px;
+   }
+
+   .Section-title.Section-before h1:before {
+      width: 40px;
+   }
+
+   .SecBefore-para {
+      padding-left: 0px;
+   }
+}
+
+@media (max-width: 576px) {
+
+   .Section-title.Section-before h1 {
+      padding-top: 23px;
+      padding-left: 0px;
+   }
+
+   .Section-title.Section-before h1:before {
+      width: 50px;
+      top: 1px;
+   }
+
+}
+
+/*--------------------------------------------------------------
+   Section Button
+--------------------------------------------------------------*/
+.Section-btn {
+   min-width: 140px;
+   height: 44px;
+   line-height: 43px;
+   font-size: 15px;
+   font-weight: 600;
+   padding: 0px 20px;
+   color: #fff;
+   text-transform: capitalize;
+   text-align: center;
+   border-radius: 5px;
+   border: 0.5px solid transparent;
+   display: inline-block;
+   position: relative;
+   transition: 0.3s;
+   background: black;
+   cursor: pointer;
+   transition: all 200ms linear 0ms;
+   white-space: nowrap;
+   font-family: 'Poppins', sans-serif;
+}
+
+/*---------- Orange Button -----------*/
+.orange-btn {
+   background-image: linear-gradient(90deg, #d1651a 0%, #f15b2a 50%, #d1651a);
+   color: #fff;
+}
+
+.orange-btn:hover {
+   background: #000;
+   color: #fff;
+}
+
+/*---------- White Button -----------*/
+.White-btn {
+   background: #ffffff;
+   color: #000000;
+   box-shadow: 0 7px 16px rgba(12, 12, 12, 0.22);
+}
+
+.White-btn:hover {
+   background: #EF5C29;
+   color: #fff;
+}
+
+
+@media (max-width: 768px) {
+
+   /* ------  Section Button  ------ */
+   .section-btn {
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 768px) {
+
+   /* ------  Text Align  ------ */
+   .Text-sm-center {
+      text-align: center !important;
+   }
+
+   .Text-sm-left {
+      text-align: left !important;
+   }
+}
+
+/* ------  All Page Common Margin and Padding for Fixed Footer ------ */
+.Page-MarnBg {
+   background: #fff;
+   margin-bottom: 500px;
+   padding-bottom: 10px;
+}
+
+/*--------------------------------------------------------------
+   Home Page
+--------------------------------------------------------------*/
+
+.mobile {
+   display: none !important;
+}
+
+.web {
+   display: block !important;
+}
+
+.d-padding {
+   padding: 60px 0px;
+}
+
+.main-title {
+   font-family: "Poppins", sans-serif;
+   font-size: 48px;
+   color: #283A57;
+   font-weight: 600;
+   margin-bottom: 20px !important;
+   text-transform: capitalize;
+}
+
+.main-text {
+   font-size: 18px;
+   font-family: "Roboto", sans-serif;
+   color: #636E80;
+}
+
+.badge-title {
+   color: #00D280;
+   font-family: "Roboto", sans-serif;
+   font-size: 18px;
+   font-weight: 600;
+   margin-bottom: 5px;
+   text-transform: capitalize;
+   margin-bottom: 10px !important;
+}
+
+.btn.main-btn {
+   background-color: #F15A2B;
+   color: #fff;
+   font-weight: 700;
+   text-transform: capitalize;
+   font-family: "Roboto", sans-serif;
+   border-radius: 4px;
+   padding: 12px 18px;
+   font-size: 15px;
+}
+
+.btn.main-btn:hover {
+   background-color: #283A57 !important;
+   color: #fff;
+}
+
+.align {
+   align-self: center;
+}
+
+/* common-css-end */
+
+/*--------------------------------------------------------------
+   Header Section
+--------------------------------------------------------------*/
+header {
+   position: relative;
+   width: 100%;
+   background-color: #fff;
+   padding: 1rem 0px;
+   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+}
+
+header .header-inner {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   width: 100%;
+}
+
+.header-hidden {
+   top: -100px;
+   /* Move the header up and out of view */
+}
+
+.header-fixed {
+   position: fixed;
+   top: 0;
+   z-index: 500;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+   animation: 0.95s ease 0s normal forwards 1 running HeaderSlideDown;
+}
+
+@keyframes HeaderSlideDown {
+   0% {
+      margin-top: -250px;
+   }
+
+   100% {
+      margin-top: 0;
+   }
+}
+
+header .header-inner .logo-brand img {
+   width: 220px;
+}
+
+.logo-brand img:nth-child(1) {
+   position: absolute !important;
+   transform: translateY(-110px);
+}
+
+.icon img:nth-child(1) {
+   transform: translateY(0px);
+}
+
+.icon img:nth-child(2) {
+   transform: translateY(-110px);
+}
+
+/* ------  Mobile Logo  ------ */
+
+header .header-menu .Mbl-Logo {
+   display: none;
+   margin-bottom: 30px;
+}
+
+header .header-menu .Mbl-Logo img {
+   width: 175px;
+}
+
+header #Primary-Menu {
+   display: flex;
+   flex-grow: 0.5;
+   align-items: center;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   justify-content: space-around;
+}
+
+/* ------  After Navbar Toggle Clicked Background Change to Black Shadow  ------ */
+
+header #Primary-Menu::after {
+   content: "";
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -10;
+   height: 100vh;
+   width: 0%;
+   /* background-color: #00000080; */
+   opacity: 0;
+}
+
+header #Primary-Menu.open::after {
+   width: 100%;
+   opacity: 1;
+}
+
+/* ------  End  ------ */
+
+header #Primary-Menu li {
+   position: relative;
+   cursor: pointer;
+}
+
+header #Primary-Menu li a {
+   font-size: 16px;
+   font-weight: 600;
+   position: relative;
+   font-family: "Poppins", sans-serif;
+   color: #000;
+}
+
+.main-menu .dropdown-toggle::after {
+   display: none;
+}
+
+/* header #Primary-Menu .main-menu .sub-menu {
+   opacity: 0;
+   position: absolute;
+   top: 50px !important;
+   left: 0;
+   transition: all 300ms ease-in-out;
+   visibility: hidden;
+   background-color: #fff;
+   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+   border: none;
+   min-width: 230px;
+   padding: 15px;
+   display: block;
+   transform: scaleY(0);
+   transform-origin: 0 0 0;
+}
+
+header #Primary-Menu .main-menu:hover .sub-menu {
+   opacity: 1;
+   visibility: visible;
+   transform: scaleY(1);
+} */
+
+/* reset */
+
+header #Primary-Menu .main-menu .sub-menu li,
+header #Primary-Menu .main-menu-2 .sub-menu-2 li {
+   list-style: none;
+   display: block;
+   margin-left: 0px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header #Primary-Menu .main-menu .sub-menu li:hover a {
+   color: #F15A2B;
+}
+
+header #Primary-Menu .main-menu-2 .sub-menu-2 li:hover a {
+   color: #F15A2B !important;
+}
+
+header #Primary-Menu .main-menu .sub-menu li a {
+   color: #000;
+   font-weight: 600;
+   padding: 10px;
+   font-size: 14px;
+   display: block;
+   width: 100%;
+   font-family: "Poppins", sans-serif;
+}
+
+header #Primary-Menu .main-menu-2 .sub-menu-2 li a {
+   color: #000 !important;
+   font-weight: 600;
+   padding: 10px;
+   font-size: 14px;
+   display: block;
+   width: 100%;
+   font-family: "Poppins", sans-serif;
+}
+
+header #Primary-Menu .main-menu .sub-menu li a:hover,
+header #Primary-Menu .main-menu .sub-menu li a:focus,
+header #Primary-Menu .main-menu-2 .sub-menu-2 li a:hover,
+header #Primary-Menu .main-menu-2 .sub-menu-2 li a:focus {
+   background: transparent;
+}
+
+/* ------  Menu Icon  ------ */
+
+header #Primary-Menu-toggle {
+   display: none;
+   cursor: pointer;
+   padding-right: 10px;
+}
+
+header #Primary-Menu-toggle .bar {
+   position: relative;
+   margin-top: 2px;
+   margin-bottom: 2px;
+   display: block;
+   height: 2px;
+   width: 1.25rem;
+   border-radius: 0.5rem;
+   background-color: #000;
+   opacity: 1;
+   transition-duration: 0.3s;
+}
+
+header #Primary-Menu-toggle .bar:nth-of-type(2) {
+   margin-left: auto;
+   width: 1rem;
+}
+
+header #Primary-Menu-toggle .bar:nth-of-type(4) {
+   margin-bottom: 0;
+   margin-left: auto;
+   width: 1rem;
+}
+
+/*--------------------------------------------------------------
+   End Header Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Banner Section
+--------------------------------------------------------------*/
+
+.banner-section {
+   background-color: #ffffff;
+}
+
+.banner-content {
+   width: 59%;
+   margin-inline: auto;
+   padding: 30px 0px;
+}
+
+.banner-title {
+   font-family: "Poppins", sans-serif;
+   font-size: 48px;
+   color: #283A57;
+   font-weight: 700;
+   margin-bottom: 20px !important;
+   text-transform: capitalize;
+}
+
+.banner-text {
+   font-size: 20px;
+   font-family: "Roboto", sans-serif;
+   color: #636E80;
+}
+
+.banner-image {
+   padding: 40px 0px;
+   position: relative;
+}
+
+.banner-img-fit {
+   width: 85%;
+   margin-inline: auto;
+   position: relative;
+}
+
+.banner-img-fit .banner-img-1 {
+   width: 100%;
+   object-fit: contain;
+}
+
+.banner-img-2 {
+   position: absolute;
+   top: 6%;
+   right: 2%;
+}
+
+/*--------------------------------------------------------------
+   End Banner Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Second Section
+--------------------------------------------------------------*/
+.second-section {
+   background-color: #ffffff;
+}
+
+.second-section .row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.second-section .col-lg-4 {
+   display: flex;
+}
+
+.second-section-box {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding: 40px 20px;
+
+}
+
+.second-section-box:hover {
+   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+   border-color: transparent !important;
+}
+
+.second-section .row .col-lg-4 {
+   padding: 0;
+}
+
+.second-section .row .col-lg-4:nth-child(2) .second-section-box {
+   border-right: 1px solid #f5f5f5;
+   border-left: 1px solid #f5f5f5;
+}
+
+.second-section .row .col-lg-4:nth-child(1) .second-box-fit {
+   background-color: #FEE9E2;
+}
+
+.second-section .row .col-lg-4:nth-child(2) .second-box-fit {
+   background-color: #E2F8ED;
+}
+
+.second-section .row .col-lg-4:nth-child(3) .second-box-fit {
+   background-color: #FFF6E5;
+}
+
+.second-box-fit {
+   background-color: #F15A2B;
+   width: 110px;
+   height: 110px;
+   margin: 0 auto 20px;
+   border-radius: 50%;
+}
+
+.second-box-fit img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   padding: 30px;
+}
+
+.second-section-title {
+   margin-bottom: 20px !important;
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-size: 22px;
+}
+
+.second-section-text {
+   font-family: "Roboto", sans-serif;
+   color: #636e80;
+   font-size: 17px;
+}
+
+/*--------------------------------------------------------------
+   End Second Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Feature Section
+--------------------------------------------------------------*/
+
+.feature-section {
+   background-color: #ffffff;
+}
+
+/* .feature-fit {
+   width: 100%;
+   height: 100%;
+}
+
+.feature-fit img {
+   width: 100%;
+   object-fit: contain;
+} */
+
+
+.feature-fit {
+   display: inline-block;
+   perspective: 1000px;
+   overflow: hidden;
+}
+
+.feature-fit img {
+   width: 100%;
+   transition: transform 0.1s;
+   transform-origin: center;
+}
+
+.feature-fit img:hover {
+   transform: scale(1.05);
+}
+
+.feature-section-list li {
+   margin: 15px 0px;
+   position: relative;
+   padding-left: 30px !important;
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+   font-size: 17px;
+}
+
+.feature-section-list li::before {
+   position: absolute;
+   left: 0;
+   content: '\f178';
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+   color: #F15A2B;
+}
+
+/*--------------------------------------------------------------
+   End Feature Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Service Section
+--------------------------------------------------------------*/
+
+.service-section {
+   background-color: #ffffff;
+}
+
+.service-box-section {
+   background-image: url(../image/Home/bg-1.jpg);
+}
+
+.service-box-section .row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.service-box-section .row .col-lg-4 {
+   display: flex;
+}
+
+.service-box {
+   padding: 30px;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 26px 73px rgba(12, 12, 12, 0.1);
+   transition: all 300ms ease-in-out;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.service-box:hover {
+   transform: translateY(-30px);
+   box-shadow: 0 26px 73px rgb(12 12 12 / 30%);
+}
+
+.service-box-fit {
+   width: 90px;
+   border-radius: 50%;
+   margin-bottom: 20px;
+}
+
+.service-box-fit img {
+   width: 100%;
+   padding: 20px;
+   object-fit: contain;
+}
+
+.service-box .main-title {
+   font-size: 24px !important;
+   font-weight: 700;
+}
+
+.service-box-section .col-lg-4:nth-child(1) .service-box-fit {
+   background-color: #FFBC42;
+}
+
+.service-box-section .col-lg-4:nth-child(2) .service-box-fit {
+   background-color: #F67C8F;
+}
+
+.service-box-section .col-lg-4:nth-child(3) .service-box-fit {
+   background-color: #56D7F4;
+}
+
+.service-box-section .col-lg-4:nth-child(4) .service-box-fit {
+   background-color: #F15B2A;
+}
+
+.service-box-section .col-lg-4:nth-child(5) .service-box-fit {
+   background-color: #30D58B;
+}
+
+.service-box-section .col-lg-4:nth-child(6) .service-box-fit {
+   background-color: #FAFC7A;
+}
+
+/*--------------------------------------------------------------
+   End Service Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Contact Section
+--------------------------------------------------------------*/
+
+.contact-section {
+   background: url(../image/Home/bg-2.png) center / auto no-repeat;
+   background-position: center center;
+   background-color: #ffffff;
+}
+
+.contact-section.d-padding {
+   padding: 60px 0px 110px;
+}
+
+.contact-section .main-text.text-start {
+   border-right: 2px dashed #ddd;
+}
+
+/*--------------------------------------------------------------
+   End Contact Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Client Section
+--------------------------------------------------------------*/
+
+.client-review-section {
+   background: url(../image/Home/bg-3.png) center / auto no-repeat;
+   background-color: #ffffff;
+}
+
+.client-review-box {
+   background-color: #fff;
+   padding: 60px;
+   border-radius: 7px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+   margin: 40px 40px;
+}
+
+.client-review {
+   padding: 10px 0px 20px;
+   font-weight: 400;
+}
+
+.client-review-box .main-title {
+   font-size: 30px !important;
+   margin-bottom: 0px !important;
+}
+
+.client-review-stars i {
+   color: gold;
+   font-size: 20px;
+   margin-right: 10px;
+}
+
+.client-review-slide .slick-prev {
+   position: absolute;
+   top: 110%;
+   left: 4%;
+}
+
+.client-review-slide .slick-next {
+   position: absolute;
+   top: 110%;
+   left: 14%;
+}
+
+.client-review-slide .slick-arrow::before {
+   color: #000;
+   font-weight: 500;
+   font-family: "Poppins", sans-serif;
+   padding: 13px 25px;
+   background-color: #E9EBF2;
+   color: #293A57;
+   border-radius: 50%;
+   font-size: 28px;
+   opacity: 1;
+   transition: all 300ms ease-in-out;
+}
+
+.client-review-slide .slick-arrow:hover::before {
+   color: #E9EBF2 !important;
+   background-color: #293A57 !important;
+}
+
+.client-review-slide .slick-prev::before {
+   content: "<";
+}
+
+.client-review-slide .slick-next::before {
+   content: ">";
+}
+
+/* .client-review-fit{
+   width: 100%;
+} 
+.client-review-fit img{
+   width: 100%;
+   object-fit: contain;
+} */
+
+.client-review-fit {
+   display: inline-block;
+   perspective: 1000px;
+   overflow: hidden;
+}
+
+.client-review-fit img {
+   width: 100%;
+   transition: transform 0.1s;
+   transform-origin: center;
+}
+
+.client-review-fit img:hover {
+   transform: scale(1.05);
+}
+
+/*--------------------------------------------------------------
+   End Client Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Send us Section
+--------------------------------------------------------------*/
+.send-us-section.d-padding {
+   background-image: url(../image/Home/bg-4.png);
+   padding: 200px 0px;
+   background-position: bottom;
+   background-color: #ffffff;
+}
+
+/*--------------------------------------------------------------
+   End Send us Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Footer Section
+--------------------------------------------------------------*/
+footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   z-index: -1;
+   width: 100%;
+   background-color: #ffffff;
+}
+
+footer.d-padding {
+   padding-bottom: 0px;
+}
+
+.footer-fit {
+   width: 90%;
+}
+
+.footer-fit img {
+   width: 100%;
+   object-fit: contain;
+}
+
+.footer-box .main-title {
+   font-size: 24px !important;
+   margin-bottom: 0px !important;
+   margin: 30px 0px 20px !important;
+}
+
+.footer-box .main-text {
+   font-size: 16px;
+}
+
+.footer-box .social-links-list {
+   width: 100%;
+}
+
+.footer-box .social-links-list li {
+   margin-right: 20px;
+   transition: all 300ms ease-in-out;
+}
+
+.footer-box .social-links-list li a {
+   font-size: 20px;
+}
+
+.footer-box .social-links-list li:hover {
+   transform: translateY(-5px);
+}
+
+a.facebook {
+   color: #1877F2;
+}
+
+a.twitter {
+   color: #131418;
+}
+
+a.instagram {
+   color: #E4405F;
+}
+
+a.linkedin {
+   color: #0A66C2;
+}
+
+.official-info-list li {
+   padding: 0px 0px 10px;
+   padding-left: 25px;
+   color: #636E80;
+   position: relative;
+}
+
+.official-info-list li a {
+   color: #636E80;
+}
+
+.official-info-list li:first-child::before {
+   position: absolute;
+   top: 3px;
+   left: 0;
+   content: '\f3c5';
+   font-family: "Font Awesome 5 Free";
+   font-weight: 800;
+   color: #00D280;
+}
+
+.official-info-list li:last-child::before {
+   position: absolute;
+   left: 0;
+   content: '\f095';
+   font-family: "Font Awesome 5 Free";
+   font-weight: 800;
+   color: #00D280;
+}
+
+.footer-menu-links li {
+   padding-bottom: 15px;
+   position: relative;
+   transition: all 300ms ease-in-out;
+}
+
+.footer-menu-links li:hover {
+   padding-left: 10px;
+}
+
+.footer-menu-links li a {
+   color: #636E80;
+   font-weight: 500;
+}
+
+.footer-menu-links li a span {
+   visibility: hidden;
+}
+
+.footer-menu-links li:hover a {
+   color: #F15B2A;
+}
+
+.footer-menu-links li:hover a span {
+   visibility: visible;
+}
+
+/* footer-bottom */
+.footer-bottom {
+   padding: 20px 0px;
+   background-color: #000;
+   margin-top: 40px;
+}
+
+.copy-rights-text {
+   color: #fff;
+   margin: 0px;
+}
+
+.copy-rights-text a {
+   color: #F15B2A;
+}
+
+/*--------------------------------------------------------------
+   End Footer Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   End Home Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   All Sub Pages
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   Common Sub Page Banner Section
+--------------------------------------------------------------*/
+
+.All-Page-Banner {
+   position: relative;
+   overflow: hidden;
+}
+
+.All-Page-Banner::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.All-Page-Banner .Banner-Img {
+   max-height: 400px;
+   min-height: 400px;
+   width: 100%;
+   object-fit: cover;
+}
+
+.All-Page-Banner .BnrPage-Inner {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   z-index: 10;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   width: 100%;
+}
+
+.All-Page-Banner .BnrPage-Title h1 {
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1;
+   text-align: center;
+   color: #fff;
+   margin-bottom: 20px;
+   text-transform: capitalize;
+   font-family: 'Poppins', sans-serif;
+}
+
+.All-Page-Banner .BnrPage-Title p {
+   text-align: center;
+   color: #ffff;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0.5px;
+   margin: 0px auto;
+   margin-bottom: 0px;
+}
+
+/*--------------------------------------------------------------
+   End Common Sub Page Banner Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Common Service Pages About LR Section
+--------------------------------------------------------------*/
+
+.AboutLR-Section .row {
+   row-gap: 30px;
+   align-items: center;
+}
+
+.AboutLR-Section .AboutLR-img {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.AboutLR-Section .AboutLR-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   transition: .3s;
+}
+
+.AboutLR-Section .AboutLR-img img:hover {
+   transform: scale(1.05);
+}
+
+.AboutLR-Section .AboutLR-content .Section-title h1 {
+   text-align: left;
+}
+
+.AboutLR-Section .AboutLR-content p {
+   font-size: 18px;
+   line-height: 34px;
+   color: #383838;
+   margin-bottom: 15px;
+   text-align: justify;
+}
+
+.AboutLR-Section .Section-title h5 {
+   color: #00D280;
+   font-family: "Roboto", Sans-serif;
+   font-size: 18px;
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+
+.AboutLR-Section .AboutLR-content .AboutLR-list {
+   margin: 0px;
+   padding-bottom: 15px;
+}
+
+.AboutLR-Section .AboutLR-content .AboutLR-list li {
+   font-size: 17px;
+   font-weight: 500;
+   margin-bottom: 10px;
+   color: #283a57;
+   position: relative;
+   padding-left: 25px;
+}
+
+.AboutLR-Section .AboutLR-content .AboutLR-list li::before {
+   content: '\f061';
+   font-family: 'Font Awesome 6 Free';
+   font-weight: 900;
+   color: #EF5C29;
+   position: absolute;
+   left: 0px;
+}
+
+/* ------  About Section with Alter Section Title ------ */
+.AboutLR-Section.AbtSectle-Alter .Section-title h1 {
+   font-size: 30px;
+}
+
+.AboutLR-Section.AbtSectle-Alter .AboutLR-content p {
+   margin: 0px;
+}
+
+/* ------  About Section with Border ------ */
+.AboutLR-Section.AboutSec-Border .About-border {
+   border: 2px solid #F15B2A;
+   border-radius: 10px;
+   transition: border 0.3s;
+   padding: 20px;
+}
+
+.AboutLR-Section.AboutSec-Border .About-border p {
+   margin: 0px;
+}
+
+/* ------  About Section with Section Title and Different Border ------ */
+.AboutLR-Section.AbtSectle-Border .Section-title h1 {
+   font-size: 30px;
+}
+
+.AboutLR-Section.AbtSectle-Border .About-border {
+   border: 2px solid #F15B2A;
+   border-radius: 10px;
+   transition: border 0.3s;
+   padding: 30px 40px;
+}
+
+.AboutLR-Section.AbtSectle-Border .About-border p {
+   margin: 0px;
+}
+
+.AboutLR-Section.AbtSectle-Blkcard .About-border {
+   border: 2px solid #000;
+}
+
+/* ------  About Section Without Image ------ */
+.AboutLR-Section.About-Noimg .row {
+   row-gap: 0px;
+}
+
+.AboutLR-Section.About-Noimg .Section-title h1 {
+   text-align: left;
+}
+
+/* ------  About Section Without Image with Button ------ */
+.AboutLR-Section.Aboutbtn-Noimg .row {
+   row-gap: 30px;
+   align-items: center;
+}
+
+.AboutLR-Section.Aboutbtn-Noimg .Section-title h1 {
+   text-align: left;
+   margin-bottom: 15px;
+}
+
+.AboutLR-Section.AboutLR-GapSign .AbtLR-gslist ul {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 30px 0px 10px;
+}
+
+.AboutLR-Section.AboutLR-GapSign .AbtLR-gslist li {
+   font-size: 16px;
+   line-height: 26px;
+   font-weight: 600;
+   margin-bottom: 20px;
+   color: #0e0e0e;
+   position: relative;
+   padding-left: 25px;
+   width: 50%;
+   white-space: nowrap;
+}
+
+.AboutLR-Section.AboutLR-GapSign .AbtLR-gslist li::before {
+   content: '\f101';
+   font-family: 'Font Awesome 6 Free';
+   font-weight: 900;
+   color: #EF5C29;
+   position: absolute;
+   left: 0px;
+}
+
+.AboutLR-Section.AboutLR-GapSign .AboutLR-call p {
+   font-size: 16px;
+   line-height: 1.875;
+   color: #383838;
+   text-align: left;
+}
+
+.AboutLR-Section.AboutLR-GapSign .AboutLR-call p a {
+   margin-left: 5px;
+   color: #f15b2a;
+   text-decoration: underline;
+}
+
+.AboutLR-Section.AboutLR-GapSign .AboutLR-gap {
+   margin: 15px 0px;
+}
+
+.AboutLR-Section.AboutLR-GapSign .AboutLR-gap img {
+   max-width: 100%;
+   width: auto;
+   height: auto;
+   object-fit: contain;
+}
+
+.AboutLR-Section.AboutLR-GapSign .AboutLR-sign {
+   display: flex;
+   gap: 20px;
+}
+
+.AboutLR-Section.AboutLR-GapSign .AboutLR-signimg img {
+   width: 50px;
+   height: 50px;
+   object-fit: contain;
+}
+
+.AboutLR-Section.AboutLR-GapSign .AboutLR-sign .AboutLR-signcont h5 {
+   font-size: 20px;
+   font-weight: 600;
+   text-align: left;
+   margin: 0px 0px 8px;
+   color: #0e0e0e;
+   font-family: 'Poppins', sans-serif;
+}
+
+.AboutLR-Section.AboutLR-GapSign .AboutLR-sign .AboutLR-signcont p {
+   margin: 0px;
+   font-size: 17px;
+   line-height: normal;
+   color: #383838;
+   text-align: left;
+}
+
+/*--------------------------------------------------------------
+   End Common Service Pages About LR Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   Common Service Pages CTA Section
+--------------------------------------------------------------*/
+
+.CTA-Section .Cta-card {
+   padding: 20px 50px;
+   display: flex;
+   row-gap: 20px;
+   flex-wrap: wrap;
+   align-items: center;
+   background-color: #0e0e0e;
+   border-radius: 7px;
+}
+
+.CTA-Section .Cta-card h5 {
+   color: #fff;
+   font-size: 22px;
+   line-height: 30px;
+   font-weight: 700;
+   flex-grow: 1;
+   text-align: left;
+   font-family: 'Poppins', sans-serif;
+   margin: 0px;
+}
+
+.CTA-Section .Cta-card a {
+   line-height: 53px;
+   height: auto;
+   width: 100%;
+   max-width: 170px;
+   margin: 0px auto;
+}
+
+.CTA-Section .Cta-card a i {
+   margin-right: 8px;
+}
+
+/*--------------------------------------------------------------
+   End Common Service Pages CTA Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Common Service Pages ADWhy Choose Section
+--------------------------------------------------------------*/
+
+.ADWhychs-Section .ADWhychs-list {
+   margin-top: 40px;
+}
+
+.ADWhychs-Section .row {
+   row-gap: 15px;
+   justify-content: center;
+   align-items: center;
+}
+
+.ADWhychs-Section .ADWhychs-card {
+   width: 100%;
+   height: 100%;
+   padding: 20px;
+   border-radius: 5px;
+   background: #fff;
+   text-align: center;
+   border: 1px solid #F15B2A;
+   margin-bottom: 30px;
+}
+
+.ADWhychs-Section .ADWhychs-card.ADWhychs-Blkcard {
+   border: 1px solid #000;
+}
+
+.ADWhychs-Section .ADWhychs-title .Section-title h1 {
+   text-align: left;
+   font-size: 30px;
+   margin: 0px;
+}
+
+.ADWhychs-Section .ADWhychs-cont p {
+   font-size: 18px;
+   line-height: 34px;
+   color: #383838;
+   margin-bottom: 0px;
+   text-align: justify;
+}
+
+/*--------------------------------------------------------------
+   End Common Service Pages ADWhy Choose Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Common Pages TAWhy Choose Section
+--------------------------------------------------------------*/
+
+.TAWhychs-Section .row {
+   row-gap: 50px;
+   margin-top: 50px;
+   justify-content: center;
+}
+
+.TAWhychs-Section .TAWhychs-card {
+   width: 100%;
+   height: 100%;
+   padding: 50px 20px 40px;
+   background: #fff;
+   box-shadow: 0 0 21px rgba(24, 28, 53, 0.2);
+   -webkit-box-shadow: 0 0 21px rgba(24, 28, 53, 0.2);
+   text-align: center;
+   position: relative;
+   z-index: 3;
+}
+
+.TAWhychs-Section .TAWhychs-card::before {
+   background: url(../image/Team-Augmentation/Flexibility-Scalability.jpg) center / cover no-repeat;
+   background-color: #051435;
+   position: absolute;
+   content: "";
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+}
+
+.TAWhychs-Section .TAWhychs-card.TACardbg-img1::before {
+   background: url(../image/Team-Augmentation/Flexibility-Scalability.jpg) center / cover no-repeat;
+}
+
+.TAWhychs-Section .TAWhychs-card.TACardbg-img2::before {
+   background: url(../image/Team-Augmentation/Rabid-Onboarding.jpg) center / cover no-repeat;
+}
+
+.TAWhychs-Section .TAWhychs-card.TACardbg-img3::before {
+   background: url(../image/Team-Augmentation/Access-to-Specialized-Skills.jpg) center / cover no-repeat;
+}
+
+.TAWhychs-Section .TAWhychs-card.TACardbg-img4::before {
+   background: url(../image/Team-Augmentation/Cost-Effective-Solutions.jpg) center / cover no-repeat;
+}
+
+.TAWhychs-Section .TAWhychs-card.TACardbg-img5::before {
+   background: url(../image/Team-Augmentation//Seamless-Integration.jpg) center / cover no-repeat;
+}
+
+.TAWhychs-Section .TAWhychs-card::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+   background: rgba(5, 20, 53, 0.5);
+   opacity: 0;
+}
+
+.TAWhychs-Section .TAWhychs-card:hover::before,
+.TAWhychs-Section .TAWhychs-card:hover::after {
+   opacity: 1;
+}
+
+.TAWhychs-Section .TAWhychs-card .TAWhychs-img {
+   display: grid;
+   place-items: center;
+   width: 80px;
+   height: 80px;
+   background: #f15b2a;
+   border-radius: 100%;
+   -webkit-border-radius: 100%;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   margin: 0px auto 20px;
+   color: #fff;
+}
+
+.TAWhychs-Section .TAWhychs-card:hover .TAWhychs-img {
+   background: #fff;
+}
+
+.TAWhychs-Section .TAWhychs-card .TAWhychs-img i {
+   font-size: 45px;
+   color: #fff;
+}
+
+.TAWhychs-Section .TAWhychs-card:hover .TAWhychs-img i {
+   color: #f15b2a;
+}
+
+.TAWhychs-Section .TAWhychs-card .TAWhychs-cont h4 {
+   font-size: 24px;
+   font-weight: 700;
+   color: #0d2252;
+   margin: 0px 0px 13px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   font-family: 'Poppins', sans-serif;
+}
+
+.TAWhychs-Section .TAWhychs-card .TAWhychs-cont p {
+   font-size: 16px;
+   color: #383838;
+   margin: 0px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   text-align: center;
+}
+
+.TAWhychs-Section .TAWhychs-card:hover .TAWhychs-cont h4,
+.TAWhychs-Section .TAWhychs-card:hover .TAWhychs-cont p {
+   color: #fff;
+}
+
+/*--------------------------------------------------------------
+   End Common Pages TAWhy Choose Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Common Pages TAWork Section
+--------------------------------------------------------------*/
+.TAWork-Section .row {
+   margin-top: 50px;
+   row-gap: 30px;
+   justify-content: center;
+}
+
+.TAWork-Section .TAWork-card {
+   display: flex;
+   align-items: flex-start;
+   gap: 20px;
+   width: 100%;
+   height: 100%;
+   flex-wrap: nowrap;
+   padding: 40px 30px;
+   background: #222;
+   border-radius: 7px;
+   box-shadow: 0 6px 21px rgba(0, 0, 0, 0.32);
+}
+
+.TAWork-Section .TAWork-card:hover {
+   background: #d1651a;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+}
+
+.TAWork-Section .TAWork-card .TAWork-icon {
+   line-height: normal;
+}
+
+.TAWork-Section .TAWork-card .TAWork-icon img {
+   width: 69px;
+   height: 69px;
+   object-fit: contain;
+}
+
+.TAWork-Section .TAWork-card .TAWork-icon i {
+   font-size: 70px;
+   display: flex;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+   background-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.TAWork-Section .TAWork-card:hover .TAWork-icon i {
+   background-image: none;
+   -webkit-text-fill-color: #fff;
+}
+
+.TAWork-Section .TAWork-card .TAWork-cont h4 {
+   font-size: 20px;
+   font-weight: 700;
+   color: #fff;
+   margin: 0px 0px 13px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   font-family: 'Poppins', sans-serif;
+}
+
+.TAWork-Section .TAWork-card .TAWork-cont p {
+   font-size: 15px;
+   color: #fff;
+   margin: 0px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   text-align: left;
+}
+
+/*--------------------------------------------------------------
+   End Common Pages TAWork Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   About Page
+--------------------------------------------------------------*/
+
+/* ------  Timeline Section  ------ */
+.Timeline-Section {
+   background: url(../image/About/Timeline-bg.jpg) center / cover no-repeat;
+   background-attachment: fixed;
+   position: relative;
+   z-index: 2;
+}
+
+.Timeline-Section::before {
+   height: 100%;
+   width: 100%;
+   content: "";
+   z-index: -1;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: rgba(2, 2, 2, 0.9);
+}
+
+.Timeline-Section .AboutLR-Section.About-Noimg .Section-title h1 {
+   color: #fff;
+}
+
+.Timeline-Section .AboutLR-Section .AboutLR-content p {
+   color: #fff;
+}
+
+.Timeline-Section .Timeline-history {
+   position: relative;
+   max-width: 970px;
+   margin: 70px auto 0px;
+   padding: 34px 0px 140px;
+   direction: ltr;
+}
+
+.Timeline-Section .Timeline-history::before {
+   content: '';
+   width: 0;
+   height: 100%;
+   border-left: 1px dashed rgba(255, 255, 255, 0.3);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+}
+
+.Timeline-Section .Timeline-history .Timeline-start {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   margin: 0px auto;
+   z-index: 99;
+   width: 101px;
+   height: 101px;
+   -webkit-border-radius: 101px;
+   border-radius: 101px;
+   background-color: #d1651a;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+}
+
+.Timeline-Section .Timeline-history .Timeline-start h5 {
+   color: #f6f6f6;
+   font-size: 28px;
+   font-weight: 700;
+   text-align: center;
+   margin: 0px;
+   line-height: 101px;
+}
+
+.Timeline-Section .Timeline-history .Timeline-content {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.Timeline-Section .Timeline-history .Timeline-content .TL-left,
+.Timeline-Section .Timeline-history .Timeline-content .TL-right {
+   width: 50%;
+}
+
+.Timeline-Section .Timeline-content .TL-item {
+   position: relative;
+   z-index: 1;
+   padding-right: 124px;
+   margin: 35px 0px 21px;
+}
+
+.Timeline-Section .Timeline-content .TL-item:nth-child(1) {
+   margin-top: 80px;
+}
+
+.Timeline-Section .Timeline-content .TL-item:nth-child(3) {
+   margin-bottom: 130px;
+}
+
+.Timeline-Section .Timeline-content .TL-item::before {
+   content: '';
+   position: absolute;
+   top: 15px;
+   right: 0;
+   width: 114px;
+   height: 0;
+   border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+   z-index: -1;
+}
+
+.Timeline-Section .Timeline-content .TL-item::after {
+   content: '';
+   position: absolute;
+   top: 4px;
+   right: -11px;
+   width: 21px;
+   height: 21px;
+   -webkit-border-radius: 21px;
+   border-radius: 21px;
+   background-color: #d1651a;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+}
+
+.Timeline-Section .Timeline-content .TL-item .TL-itemcont {
+   text-align: right;
+}
+
+/* Timeline Right Align */
+
+.Timeline-Section .Timeline-content .TL-right .TL-item {
+   padding-right: 0;
+   padding-left: 124px;
+   margin-bottom: 35px;
+}
+
+.Timeline-Section .Timeline-content .TL-right .TL-item:nth-child(1) {
+   margin-top: 0px;
+}
+
+.Timeline-Section .Timeline-content .TL-right .TL-item:nth-child(2) {
+   margin-bottom: 134px;
+}
+
+.Timeline-Section .Timeline-content .TL-right .TL-item::before {
+   right: auto;
+   left: 0;
+}
+
+.Timeline-Section .Timeline-content .TL-right .TL-item::after {
+   right: auto;
+   left: -10px;
+}
+
+.Timeline-Section .Timeline-content .TL-right .TL-item .TL-itemcont {
+   text-align: left;
+}
+
+.Timeline-Section .Timeline-content .TL-item .TL-itemcont h3 {
+   font-size: 23px;
+   font-weight: 600;
+   color: #f6f6f6;
+   line-height: 1.2;
+   margin-bottom: 10px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.Timeline-Section .Timeline-content .TL-item .TL-itemcont p {
+   font-size: 18px;
+   line-height: 26px;
+   color: #bcbcbc;
+   margin: 0px;
+}
+
+.Timeline-Section .Timeline-history .Timeline-img {
+   max-width: 140px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+   -webkit-border-radius: 140px;
+   border-radius: 140px;
+   border: 2px solid #474747;
+   overflow: hidden;
+}
+
+.Timeline-Section .Timeline-history .Timeline-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+/* ------  End Timeline Section  ------ */
+
+/* ------  Review Section  ------ */
+
+.Review-Section {
+   background: #e4eaee;
+}
+
+.Review-Section .Reviews-list {
+   width: 95%;
+   margin: 0px auto;
+}
+
+.Review-Section .Section-title h1 {
+   text-align: left;
+}
+
+.Review-Section .Review-card {
+   position: relative;
+   background: #fff;
+   min-height: 370px;
+   box-shadow: 0 0 10px rgba(23, 23, 23, 0.08);
+   padding: 35px 40px;
+   margin: 40px 12px 20px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+   -webkit-box-shadow: 0 0 10px rgba(23, 23, 23, 0.08);
+   -o-box-shadow: 0 0 10px rgba(23, 23, 23, 0.08);
+   -webkit-transition: all 300ms linear 0ms;
+   transition: all 300ms linear 0ms;
+   text-align: center;
+}
+
+.Review-Section .Review-card:hover {
+   -webkit-transform: translateY(-16px);
+   transform: translateY(-16px);
+   -webkit-box-shadow: 0 24px 18px rgba(23, 23, 23, 0.1);
+   box-shadow: 0 24px 18px rgba(23, 23, 23, 0.1);
+}
+
+.Review-Section .Review-card .Review-img {
+   max-width: 124px;
+   border: 2px solid #e7e7e7;
+   padding: 6px;
+   -webkit-border-radius: 124px;
+   border-radius: 124px;
+   margin: 0 auto 18px auto;
+}
+
+.Review-Section .Review-card .Review-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   -webkit-filter: grayscale(100%);
+   filter: grayscale(100%);
+   -webkit-border-radius: 124px;
+   border-radius: 124px;
+   -webkit-transition: all 300ms linear 0ms;
+   transition: all 300ms linear 0ms;
+}
+
+.Review-Section .Review-card:hover .Review-img img {
+   -webkit-filter: grayscale(0);
+   filter: grayscale(0);
+}
+
+.Review-Section .Review-card .Review-cont .Review-desc {
+   font-size: 16px;
+   line-height: 30px;
+   color: #383838;
+   margin-bottom: 15px;
+   text-align: center;
+}
+
+.Review-Section .Review-card .Review-cont .Review-bio h3 {
+   font-size: 18px;
+   color: #0e0e0e;
+   line-height: 1.2;
+   margin: 0 05px;
+   font-weight: 700;
+   font-family: 'Poppins', sans-serif;
+}
+
+.Review-Section .Review-card .Review-cont .Review-bio p {
+   font-size: 15px;
+   line-height: 1.875;
+   color: #383838;
+   margin: 0;
+}
+
+.Review-Section .Review-card .Review-quote {
+   font-size: 170px;
+   color: #ccc;
+   position: absolute;
+   top: -47px;
+   left: 40px;
+   font-family: "Playfair Display";
+   font-weight: 900;
+   font-style: normal;
+   line-height: 1;
+}
+
+.Review-Section .slick-arrow {
+   width: 53px;
+   height: 53px;
+   background-color: #bbb;
+   color: #fff;
+   background-size: inherit;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   border-radius: 50%;
+   z-index: 2;
+}
+
+.Review-Section .slick-prev::before,
+.Review-Section .slick-next::before {
+   content: "\f104";
+   font-family: 'Font Awesome 5 Pro';
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+}
+
+.Review-Section .slick-next::before {
+   -webkit-transform: translate(-50%, -50%) rotate(180deg);
+   transform: translate(-50%, -50%) rotate(180deg);
+}
+
+/* ------  End Review Section  ------ */
+
+/*--------------------------------------------------------------
+   End About Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Cloud Computing Page
+--------------------------------------------------------------*/
+
+/* ------  IconBox Section  ------ */
+.IconBox-Section {
+   background: #010202;
+}
+
+.IconBox-Section .IconBox-title {
+   display: flex;
+   justify-content: center;
+}
+
+.IconBox-Section .Section-title h1 {
+   color: #fff;
+}
+
+.IconBox-Section .row {
+   row-gap: 20px;
+   justify-content: center;
+}
+
+.IconBox-Section .IconBox-Card {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.IconBox-Section .IconBox-Card .IconBox-img {
+   margin: 0px auto 20px;
+}
+
+.IconBox-Section .IconBox-Card .IconBox-img svg {
+   width: 100px;
+   height: 100px;
+   position: relative;
+   display: block;
+}
+
+.IconBox-Section .IconBox-Card .IconBox-img .cls-1 {
+   fill: #f15a2b;
+}
+
+.IconBox-Section .IconBox-Card .IconBox-cont p {
+   font-size: 17px;
+   color: #fff;
+   margin-bottom: 0px;
+   text-align: center;
+}
+
+.IconBox-Section .Icon-reitems {
+   width: 20%;
+}
+
+/* ------ End IconBox Section  ------ */
+
+/*--------------------------------------------------------------
+   Cloud Computing Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Website and Mobile App Page
+--------------------------------------------------------------*/
+
+/* ------  Banner Section  ------ */
+
+.Web_MblApp-Banner {
+   padding: 80px 0px 80px;
+   background-color: transparent;
+   background-image: linear-gradient(180deg, #FFFFFF 0%, #FCDED4 100%);
+}
+
+.Web_MblApp-Banner .Web_MblApp-title h1 {
+   color: #000000;
+   font-size: 35px;
+   line-height: 45px;
+   margin-bottom: 30px;
+   font-weight: 700;
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+   max-width: 774px;
+   margin: 0px auto 30px;
+}
+
+.Web_MblApp-Banner .row {
+   align-items: center;
+   justify-content: center;
+   margin-top: 50px;
+   row-gap: 30px;
+}
+
+.Web_MblApp-Banner .Web_MblApp-img {
+   margin: 0px auto;
+}
+
+.Web_MblApp-Banner .Web_MblApp-img.Mbl-img {
+   width: 80%;
+}
+
+.Web_MblApp-Banner .Web_MblApp-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+/* ------  End Banner Section  ------ */
+
+/* ------  ExploreApp Section  ------ */
+
+.ExploreApp-Section .row {
+   row-gap: 40px;
+   justify-content: center;
+}
+
+.ExploreApp-Section .ExplApp-card {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background-color: #0e0e0e;
+   border-radius: 7px;
+}
+
+.ExploreApp-Section .ExplApp-card::before {
+   content: "";
+   z-index: 1;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #d1651a;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   position: absolute;
+   transition: all 200ms linear 0ms;
+   -webkit-transition: all 200ms linear 0ms;
+   opacity: 0;
+}
+
+.ExploreApp-Section .ExplApp-card::after {
+   content: '';
+   position: absolute;
+   top: 11px;
+   right: -11px;
+   z-index: 1;
+   background-color: #d1651a;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   transition: all 200ms linear 0ms;
+   -webkit-transition: all 200ms linear 0ms;
+}
+
+.ExploreApp-Section .ExplApp-card:hover::before {
+   opacity: 1;
+}
+
+.ExploreApp-Section .ExplApp-card:hover::after {
+   opacity: 0.5;
+}
+
+.ExploreApp-Section .ExplApp-card .ExplApp-Cardinr {
+   padding: 30px 20px 30px;
+   position: relative;
+   z-index: 10;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+}
+
+.ExploreApp-Section .ExplApp-card .ExplApp-bgicon {
+   position: absolute;
+   right: 0px;
+   bottom: 0px;
+   line-height: 1;
+   transition: all 200ms linear 0ms;
+}
+
+.ExploreApp-Section .ExplApp-card .ExplApp-bgicon i {
+   font-size: 60px;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+   background-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: all 200ms linear 0ms;
+   -webkit-transition: all 200ms linear 0ms;
+   opacity: 0.45;
+}
+
+.ExploreApp-Section .ExplApp-card:hover .ExplApp-bgicon {
+   opacity: 0;
+}
+
+.ExploreApp-Section .ExplApp-card .ExplApp-icon {
+   margin-bottom: 20px;
+}
+
+.ExploreApp-Section .ExplApp-card .ExplApp-icon i {
+   font-size: 62px;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+   background-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   line-height: normal;
+   transition: all 200ms linear 0ms;
+   -webkit-transition: all 200ms linear 0ms;
+   position: relative;
+}
+
+.ExploreApp-Section .ExplApp-card:hover .ExplApp-icon i {
+   background-image: none;
+   -webkit-text-fill-color: #fff;
+}
+
+.ExploreApp-Section .ExplApp-card .ExplApp-cont h5 {
+   font-size: 20px;
+   font-weight: 600;
+   color: #fff;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   font-family: 'Poppins', sans-serif;
+   margin: 0px;
+   position: relative;
+}
+
+/* ------  End ExploreApp Section  ------ */
+
+/* ------  ConvoForm Section  ------ */
+
+.ConvoForm-Section {
+   background-color: #E4ECFF;
+   font-family: 'Poppins', sans-serif;
+}
+
+.ConvoForm-Section .ConvoForm {
+   font-style: 16px;
+   line-height: 26px;
+   color: #bcbcbc;
+}
+
+.ConvoForm-Section .ConvoForm .form-group {
+   margin-bottom: 20px;
+}
+
+.ConvoForm-Section .ConvoForm .form-group label {
+   color: #000;
+   display: block;
+   margin: 0px 0px 10px 5px;
+}
+
+.ConvoForm-Section .ConvoForm .form-group input {
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   color: #0e0e0e;
+   background: #ffffff;
+   font-size: 14px;
+   border: 1px solid #d8d8d8;
+   padding: 6px 22px;
+   line-height: normal;
+   font-weight: 400;
+   height: 51px;
+   -webkit-transition: all 200ms linear 0ms;
+   transition: all 200ms linear 0ms;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   width: 100%;
+   outline: none;
+}
+
+.ConvoForm-Section .ConvoForm .form-group textarea {
+   height: 175px;
+   width: 100%;
+   padding: 12px 22px;
+   background: #ffffff;
+   font-size: 14px;
+   border: 1px solid #d8d8d8;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   outline: none;
+}
+
+.ConvoForm-Section .ConvoForm button i {
+   margin-right: 8px;
+   font-size: 15px;
+}
+
+/* ------  End ConvoForm Section  ------ */
+
+/* ------  MAWork Section  ------ */
+
+.MAWork-Section .row {
+   margin-top: 50px;
+   row-gap: 65px;
+   justify-content: center;
+}
+
+.MAWork-Section .row>* {
+   display: flex;
+   justify-content: center;
+}
+
+.MAWork-Section .MAWork-reitems {
+   width: 20%;
+}
+
+.MAWork-Section .MAWork-card {
+   max-width: 350px;
+   width: 100%;
+   height: 100%;
+   background: #fff;
+   text-align: center;
+   padding: 30px 10px;
+   position: relative;
+   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.11);
+   -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.11);
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+}
+
+.MAWork-Section .MAWork-card::before {
+   content: '';
+   height: 4px;
+   width: 0;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+   background-color: #d1651a;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+   -webkit-transition: all 260ms linear 0ms;
+   transition: all 260ms linear 0ms;
+}
+
+.MAWork-Section .MAWork-card:hover {
+   -webkit-transform: translateY(20px);
+   transform: translateY(20px);
+}
+
+.MAWork-Section .MAWork-card:hover::before {
+   width: 100%;
+}
+
+.MAWork-Section .MAWork-card .MAWork-icon {
+   position: absolute;
+   top: -30px;
+   left: 0;
+   right: 0;
+   margin: auto;
+   width: 80px;
+   height: 80px;
+   background-color: #d1651a;
+   border-radius: 100%;
+   -webkit-border-radius: 100%;
+   display: grid;
+   place-items: center;
+}
+
+.MAWork-Section .MAWork-card .MAWork-icon i {
+   font-size: 40px;
+   color: #fff;
+}
+
+.MAWork-Section .MAWork-card .MAWork-cont p {
+   margin: 45px 0px 0px;
+   font-size: 17px;
+   color: #383838;
+   font-weight: 600;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+}
+
+/* ------  End MAWork Section  ------ */
+
+/* ------  MABenefit Section  ------ */
+
+.MABenefit-Section {
+   background-color: #F2F2F2;
+}
+
+.MABenefit-Section .MAWork-img {
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+}
+
+.MABenefit-Section .MAWork-img img {
+   max-width: 680px;
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+/* ------  End MABenefit Section  ------ */
+
+/* ------  SaalesForm Section  ------ */
+
+.SalesForm-Section {
+   background-color: #E8F8FF;
+   font-family: 'Poppins', sans-serif;
+}
+
+.SalesForm-Section .SalesForm {
+   background-color: rgba(0, 0, 0, 0.864);
+   border: 1px solid rgba(134, 134, 134, 0.6);
+   padding: 60px 58px;
+   font-style: 16px;
+   line-height: 26px;
+   color: #bcbcbc;
+   -webkit-border-radius: 6px;
+   border-radius: 6px;
+}
+
+.SalesForm-Section .SalesForm .form-group {
+   margin-bottom: 20px;
+}
+
+.SalesForm-Section .SalesForm .form-group label {
+   color: #fff;
+   display: block;
+   margin: 0px 0px 10px 5px;
+}
+
+.SalesForm-Section .SalesForm .form-group input {
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   color: #0e0e0e;
+   background-color: #dadadb;
+   font-size: 14px;
+   border: 1px solid #d8d8d8;
+   padding: 6px 22px;
+   line-height: normal;
+   font-weight: 400;
+   height: 51px;
+   -webkit-transition: all 200ms linear 0ms;
+   transition: all 200ms linear 0ms;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   width: 100%;
+   outline: none;
+}
+
+.SalesForm-Section .SalesForm .form-group textarea {
+   height: 120px;
+   width: 100%;
+   padding: 12px 22px;
+   background-color: #dadadb;
+   font-size: 14px;
+   border: 1px solid #d8d8d8;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   outline: none;
+}
+
+.SalesForm-Section .SalesForm button i {
+   margin-right: 8px;
+   font-size: 15px;
+}
+
+/* ------  End SalesForm Section  ------ */
+
+/*--------------------------------------------------------------
+   End Website and Mobile App Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Application Development Page
+--------------------------------------------------------------*/
+
+/* ------  DevProcess Section  ------ */
+.DevProcess-Section .row {
+   row-gap: 30px;
+   justify-content: center;
+   margin-top: 40px;
+}
+
+.DevProcess-Section .DevProcess-card {
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   padding: 44px 20px;
+   text-align: center;
+   box-shadow: 0 1px 18px rgba(0, 0, 0, 0.11);
+   -webkit-box-shadow: 0 1px 18px rgba(0, 0, 0, 0.11);
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+}
+
+.DevProcess-Section .DevProcess-card:hover {
+   transform: translateY(-10px);
+   -webkit-transform: translateY(-10px);
+}
+
+.DevProcess-Section .DevProcess-card .DevProcess-cont h4 {
+   font-size: 20px;
+   font-weight: 700;
+   color: #F15B2A;
+   margin: 0px 0px 23px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   font-family: 'Poppins', sans-serif;
+}
+
+.DevProcess-Section .DevProcess-card .DevProcess-cont p {
+   font-size: 16px;
+   color: #383838;
+   margin: 0px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   text-align: center;
+}
+
+/* ------  End DevProcess Section  ------ */
+
+/* ------  IndServe Section  ------ */
+
+.IndServe-Section .row {
+   align-items: center;
+   justify-content: center;
+   row-gap: 30px;
+}
+
+.IndServe-Section .IndServe-card {
+   width: 100%;
+   height: 100%;
+   border: 1px solid #e9eaf6;
+   padding: 20px 16px;
+   background-color: #fff;
+   -webkit-transition: all 200ms linear 0ms;
+   transition: all 200ms linear 0ms;
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+}
+
+.IndServe-Section .IndServe-card:hover {
+   background-color: #0e0e0e;
+   border-color: #0e0e0e;
+   -webkit-box-shadow: 0 13px 29px rgba(14, 14, 14, 0.27);
+   box-shadow: 0 13px 29px rgba(14, 14, 14, 0.27);
+}
+
+.IndServe-Section .IndServe-card .IndServe-cont p {
+   font-size: 16px;
+   line-height: 1.8;
+   color: #3a4268;
+   margin: 0px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   text-align: left;
+}
+
+.IndServe-Section .IndServe-card:hover .IndServe-cont p {
+   color: #d4d7e8;
+}
+
+.IndServe-Section .IndServe-Cntrimg img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+/* ------  End IndServe Section  ------ */
+
+/*--------------------------------------------------------------
+   End Application Development Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   PC and Laptop Page
+--------------------------------------------------------------*/
+
+/* ------  PLWhychs Section  ------ */
+
+.PLWhychs-Section .row {
+   justify-content: center;
+   margin-top: 60px;
+   row-gap: 60px;
+}
+
+.PLWhychs-Section .PLWhychs-card {
+   position: relative;
+   z-index: 10;
+   width: 100%;
+   height: 100%;
+}
+
+.PLWhychs-Section .PLWhychs-card::before {
+   content: '';
+   z-index: -1;
+   position: absolute;
+   top: 59px;
+   right: 40px;
+   bottom: 0;
+   left: 0px;
+   background-image: -webkit-linear-gradient(top, #d1651a, #f15b2a);
+   -webkit-border-radius: 0 171px 171px 0;
+   border-radius: 0 0px 171px 0;
+   -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.23) inset;
+   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.23) inset;
+   -webkit-transition: all 200ms linear 0ms;
+   transition: all 200ms linear 0ms;
+   opacity: 0;
+}
+
+.PLWhychs-Section .PLWhychs-card:hover::before {
+   opacity: 1;
+   bottom: -33px;
+   left: -24px;
+}
+
+.PLWhychs-Section .PLWhychs-card .PLWhychs-Cardinr {
+   background: #000;
+   padding: 50px 30px 76px 40px;
+   position: relative;
+   max-width: 550px;
+   width: 100%;
+   height: 100%;
+   margin: 0px auto;
+}
+
+.PLWhychs-Section .PLWhychs-card .PLWhychs-img {
+   margin-bottom: 30px;
+}
+
+.PLWhychs-Section .PLWhychs-card .PLWhychs-img img {
+   width: 65px;
+   height: 65px;
+   object-fit: contain;
+}
+
+.PLWhychs-Section .PLWhychs-card .PLWhychs-cont h4 {
+   font-size: 23px;
+   font-weight: 600;
+   color: #fff;
+   text-align: left;
+   margin: 0px 0px 18px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   font-family: 'Poppins', sans-serif;
+}
+
+.PLWhychs-Section .PLWhychs-card .PLWhychs-cont p {
+   font-size: 16px;
+   line-height: 27px;
+   color: #e9e9e9;
+   margin: 0px 0px 16px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   text-align: left;
+}
+
+.PLWhychs-Section .PLWhychs-card .PLWhychs-cont a {
+   height: 45px;
+   width: 45px;
+   font-size: 20px;
+   position: absolute;
+   bottom: 27px;
+   right: 24px;
+   background-color: #535353;
+   line-height: 45px;
+   text-align: center;
+   border-radius: 45px;
+   color: #fff;
+   z-index: 1;
+}
+
+/* ------  End PLWhychs Section  ------ */
+
+/* ------  RdyManage Section  ------ */
+
+.RdyManage-Section .Section-title p {
+   text-align: center;
+   color: #0e0e0e;
+   font-size: 18px;
+   line-height: 34px;
+}
+
+/* ------  End RdyManage Section  ------ */
+
+/*--------------------------------------------------------------
+   End PC and Laptop Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Networking Page
+--------------------------------------------------------------*/
+
+/* ------  ServiceOffer Section  ------ */
+
+.ServiceOffer-Section .row {
+   row-gap: 15px;
+   margin-top: 35px;
+   justify-content: center;
+}
+
+.ServiceOffer-Section .Srvcsoff-card {
+   width: 100%;
+   padding: 40px;
+   background: transparent;
+   text-align: center;
+   position: relative;
+   transition: all 200ms linear 0ms;
+   -webkit-transition: all 200ms linear 0ms;
+}
+
+.ServiceOffer-Section .Srvcsoff-card:hover {
+   -webkit-box-shadow: 0 26px 73px rgba(12, 12, 12, 0.1);
+   box-shadow: 0 26px 73px rgba(12, 12, 12, 0.1);
+}
+
+.ServiceOffer-Section .Srvcsoff-card .Srvcsoff-img {
+   display: grid;
+   place-items: center;
+   position: relative;
+   margin: 0 auto 25px;
+   width: 96px;
+   height: 96px;
+   background-color: rgba(241, 91, 42, 0.14);
+   -webkit-border-radius: 96px;
+   border-radius: 96px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+}
+
+.ServiceOffer-Section .Srvcsoff-card .Srvcsoff-img.Srvcsoff-Bgcolor1 {
+   background-color: rgba(241, 91, 42, 0.14);
+}
+
+.ServiceOffer-Section .Srvcsoff-card .Srvcsoff-img.Srvcsoff-Bgcolor2 {
+   background-color: rgba(0, 210, 128, 0.14);
+}
+
+.ServiceOffer-Section .Srvcsoff-card .Srvcsoff-img.Srvcsoff-Bgcolor3 {
+   background-color: rgba(255, 188, 66, 0.14);
+}
+
+.ServiceOffer-Section .Srvcsoff-card .Srvcsoff-img.Srvcsoff-Bgcolor4 {
+   background-color: rgba(241, 91, 42, 0.14);
+}
+
+.ServiceOffer-Section .Srvcsoff-card .Srvcsoff-img.Srvcsoff-Bgcolor5 {
+   background-color: rgba(0, 210, 128, 0.14);
+}
+
+.ServiceOffer-Section .Srvcsoff-card .Srvcsoff-img img {
+   width: 40px;
+   height: 40px;
+   object-fit: contain;
+}
+
+.ServiceOffer-Section .Srvcsoff-card .Srvcsoff-cont h4 {
+   font-size: 22px;
+   font-weight: 700;
+   line-height: 30px;
+   color: #283A57;
+   margin: 0px 0px 20px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   font-family: 'Poppins', sans-serif;
+}
+
+.ServiceOffer-Section .Srvcsoff-card .Srvcsoff-cont p {
+   font-size: 17px;
+   line-height: 1.64;
+   color: #636e80;
+   margin-bottom: 0px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   text-align: center;
+}
+
+/* ------  End ServiceOffer Section  ------ */
+
+/*--------------------------------------------------------------
+   End Networking Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Software Licensing Page
+--------------------------------------------------------------*/
+
+/* ------  SLWhychs Section  ------ */
+
+.SLWhychs-Section .row {
+   row-gap: 30px;
+   justify-content: center;
+}
+
+.SLWhychs-Section .SLWhychs-card {
+   display: flex;
+   flex-wrap: nowrap;
+   gap: 20px;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   background: #fff;
+   z-index: 1;
+   padding: 32px 30px 32px 25px;
+   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.SLWhychs-Section .SLWhychs-card::before {
+   content: '';
+   z-index: -1;
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 5px;
+   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+   background: #f15b2a;
+}
+
+.SLWhychs-Section .SLWhychs-card:hover::before {
+   height: 100%;
+}
+
+.SLWhychs-Section .SLWhychs-card .SLWhychs-img {
+   margin-right: 25px;
+   line-height: 1;
+}
+
+.SLWhychs-Section .SLWhychs-card .SLWhychs-img i {
+   color: #f15b2a;
+   font-size: 45px;
+   -webkit-transition: all 300ms linear 0ms;
+   transition: all 300ms linear 0ms;
+}
+
+.SLWhychs-Section .SLWhychs-card:hover .SLWhychs-img i {
+   color: #fff;
+}
+
+.SLWhychs-Section .SLWhychs-card .SLWhychs-cont h4 {
+   font-size: 20px;
+   font-weight: 700;
+   color: #0e0e0e;
+   margin: 0px 0px 10px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   font-family: 'Poppins', sans-serif;
+}
+
+.SLWhychs-Section .SLWhychs-card:hover .SLWhychs-cont h4 {
+   color: #fff;
+}
+
+.SLWhychs-Section .SLWhychs-card .SLWhychs-cont p {
+   font-size: 16px;
+   color: #383838;
+   margin: 0px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   text-align: left;
+}
+
+.SLWhychs-Section .SLWhychs-card:hover .SLWhychs-cont p {
+   color: #fff;
+}
+
+/* ------  End SLWhychs Section  ------ */
+/*--------------------------------------------------------------
+   End Software Licensing Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   All Pages Section Expect Services Pages 
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   About Section
+--------------------------------------------------------------*/
+.About-Section.AboutBkg-Section {
+   background: #F1F2F6;
+   overflow: hidden;
+}
+
+.About-Section .row {
+   row-gap: 30px;
+   align-items: center;
+}
+
+.About-Section .About-content .section-title h1 {
+   text-align: left;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+   color: #283A57;
+   line-height: 60px;
+   font-size: 40px;
+}
+
+.About-Section .About-content p {
+   text-align: left;
+   font-family: 'Roboto', sans-serif;
+   color: #636E80;
+   font-size: 18px;
+   line-height: 30px;
+}
+
+.About-Section .About-content .About-list {
+   margin: 0px;
+   padding-bottom: 15px;
+}
+
+.About-Section .About-content .About-list li {
+   font-size: 17px;
+   font-weight: 500;
+   margin-bottom: 10px;
+   color: #283a57;
+   position: relative;
+   padding-left: 25px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.About-Section .About-content .About-list li::before {
+   content: '\f058';
+   font-family: 'FontAwesome';
+   color: #EF5C29;
+   position: absolute;
+   left: 0px;
+}
+
+.About-Section .About-button {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   margin-top: 30px;
+}
+
+.About-Section .About-img {
+   width: 95%;
+   margin: 0px auto;
+}
+
+/* Colorize-zoom Container */
+.img-hover-zoom--colorize img {
+   transition: transform .5s, filter 1.5s ease-in-out;
+}
+
+/* The Transformation */
+.img-hover-zoom--colorize:hover img {
+   filter: grayscale(0);
+   transform: scale(1.1);
+}
+
+.About-Section .About-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   transition: 0.3s;
+}
+
+.About-Section.AboutBkg-Section .About-img img:hover {
+   transform: scale(1.1);
+   transition: 0.3s;
+}
+
+/*--------------------------------------------------------------
+   End About Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   Offer Section
+--------------------------------------------------------------*/
+
+.Offer-Section {
+   background: #f3f7ff;
+}
+
+.Offer-Section .Offer-card {
+   width: 100%;
+   position: relative;
+   background: #fff;
+   padding: 50px;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   height: 100%;
+}
+
+.Offer-Section .Offer-card:hover {
+   background-color: #f3f7ff;
+   z-index: 99;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgb(0 0 0 / 16%) 0px 25px 20px -20px;
+}
+
+.Offer-Section .Offer-card img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 65px;
+}
+
+.Offer-Section .Offer-card .card-heading h3 {
+   font-family: 'Poppins', sans-serif;
+   padding: 20px;
+   color: #000;
+   font-weight: 700;
+   font-size: 20px;
+   text-align: center;
+}
+
+.Offer-Section .Offer-card p {
+   margin: 0px;
+   text-align: center;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   color: #000;
+}
+
+/*--------------------------------------------------------------
+   End Offer Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   About Section
+--------------------------------------------------------------*/
+.About-Section1 {
+   background: url(../../assets/image/SF-mobile-app/bg-image.jpg) no-repeat center;
+   background-attachment: fixed;
+   overflow: hidden;
+}
+
+.About-content1 {
+   padding: 100px;
+   background: rgba(0, 0, 0, 0.5);
+   /* Dark overlay */
+}
+
+.About-content1 p {
+   color: #fff;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   padding-bottom: 15px;
+}
+
+.About-content1 h1 {
+   color: #fff;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+   font-size: 54px;
+   padding: 15px 0;
+   line-height: 57px;
+}
+
+.About-content1 span {
+   color: #d1651a;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 800;
+}
+
+.About-Section1 .About-content1 .section-title h1 {
+   text-align: left;
+}
+
+/*--------------------------------------------------------------
+   End About Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   Industry Section
+--------------------------------------------------------------*/
+
+.Industry-Section {
+   padding-bottom: 50px;
+}
+
+.Industry-Section .row {
+   row-gap: 25px;
+}
+
+.Industry-Section .content-left .section-title h1 {
+   margin-bottom: 15px;
+   text-align: left;
+   font-size: 30px;
+   line-height: 40px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+}
+
+.Industry-Section .content-left .section-title p {
+   text-align: left;
+   font-size: 11px;
+   font-weight: 600;
+   display: inline-block;
+   color: #0e0e0e;
+   text-transform: uppercase;
+   font-family: 'Poppins', sans-serif;
+   line-height: 26px;
+   letter-spacing: 3px;
+   margin-bottom: 13px;
+}
+
+.Industry-Section .content-right p {
+   font-size: 18px;
+   color: #000;
+   line-height: 30px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.Industry-Section .topsec {
+   padding-bottom: 30px;
+}
+
+.Industry-Section .apptab {
+   float: left;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   row-gap: 30px;
+}
+
+.Industry-Section .apptab button {
+   display: block;
+   background: #fff;
+   color: black;
+   padding: 30px;
+   margin: 0;
+   width: 100%;
+   border: 1px solid #232323;
+   outline: none;
+   text-align: left;
+   cursor: pointer;
+   transition: 0.3s;
+   font-size: 16px;
+   position: relative;
+}
+
+.Industry-Section .apptab button::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   right: -24px;
+   -webkit-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+   width: 0;
+   height: 0;
+   border-width: 12px;
+   border-color: transparent transparent transparent #f15b2a;
+   border-style: solid;
+   opacity: 0;
+}
+
+.Industry-Section .apptab button.active::after {
+   opacity: 1;
+}
+
+.Industry-Section .apptab button h4 {
+   font-size: 22px;
+   font-weight: 700;
+   color: #0e0e0e;
+   margin-bottom: 16px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.Industry-Section .apptab button p {
+   font-size: 16px;
+   color: #383838;
+   margin: 0px;
+   text-align: left;
+}
+
+.Industry-Section .apptab button:hover {
+   background: linear-gradient(90deg, #EF5C29 0%, #D2651B 100%);
+   color: #fff;
+   border-color: #f15b2a;
+}
+
+.Industry-Section .apptab button:hover h4,
+.Industry-Section .apptab button:hover p {
+   color: #fff;
+}
+
+.Industry-Section .apptab button.active {
+   background: linear-gradient(90deg, #EF5C29 0%, #D2651B 100%);
+   color: #fff;
+   border-color: #f15b2a;
+}
+
+.Industry-Section .apptab button.active h4,
+.Industry-Section .apptab button.active p {
+   color: #fff;
+}
+
+.Industry-Section .tabcontent {
+   width: 100%;
+   height: 100%;
+}
+
+.Industry-Section .tabcontent img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/*--------------------------------------------------------------
+   End Industry Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   Career Section
+--------------------------------------------------------------*/
+
+.Career-Section .content-left .section-title h1 {
+   margin-bottom: 15px;
+   text-align: left;
+   font-size: 30px;
+   line-height: 40px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+}
+
+.Career-Section .content-left .section-title p {
+   text-align: left;
+   font-size: 15px;
+   font-weight: 600;
+   display: inline-block;
+   color: #0e0e0e;
+   font-family: 'Poppins', sans-serif;
+   line-height: 26px;
+   margin-bottom: 13px;
+}
+
+.Career-Section .content-right p {
+   font-size: 18px;
+   color: #000;
+   line-height: 30px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.Career-Section .topsec {
+   padding-bottom: 30px;
+}
+
+.career-card::after,
+.career-card img {
+   border-radius: 50%;
+}
+
+
+.career-card-box {
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.career-card {
+   padding: 2.5rem 2rem;
+   border-radius: 10px;
+   background-color: rgba(255, 255, 255, .5);
+   max-width: 500px;
+   box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+   margin: 1rem;
+   position: relative;
+   transform-style: preserve-3d;
+   overflow: hidden;
+}
+
+.career-card:hover {
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.career-card img {
+   width: 70px;
+   background: #EBF2FD;
+   padding: 15px;
+   display: block;
+   box-shadow: 0 0 0 5px #FFF;
+}
+
+.career-infos {
+   margin-left: 1.5rem;
+}
+
+.career-name {
+   margin-bottom: 1rem;
+}
+
+.career-name h2 {
+   font-size: 20px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+}
+
+.career-text p {
+   font-size: 14px;
+   margin-bottom: 5px;
+   color: #939393;
+}
+
+.career-para p {
+   font-size: 15px;
+   line-height: 28px;
+   margin-bottom: 18px;
+   color: #000;
+}
+
+.button_slide {
+   min-width: 140px;
+   height: 44px;
+   line-height: 44px;
+   font-size: 15px;
+   font-weight: 700;
+   padding: 0px 20px;
+   color: #fff;
+   text-transform: capitalize;
+   text-align: center;
+   border-radius: 5px;
+   display: inline-block;
+   position: relative;
+   transition: 0.3s;
+   background: black;
+   cursor: pointer;
+   transition: all 200ms linear 0ms;
+   white-space: nowrap;
+   font-family: 'Poppins', sans-serif;
+   box-shadow: inset 0 0 0 0 #EF5C29;
+   -webkit-transition: ease-out 0.4s;
+   -moz-transition: ease-out 0.4s;
+   transition: ease-out 0.4s;
+   position: relative;
+   white-space: nowrap;
+}
+
+.slide_left:hover {
+   box-shadow: inset 0 0 0 50px #EF5C29;
+}
+
+/*--------------------------------------------------------------
+   End Career Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   Team Section
+--------------------------------------------------------------*/
+
+.Team-Section {
+   padding-bottom: 50px;
+}
+
+.Team-Section .content-left .section-title h1 {
+   margin-bottom: 15px;
+   text-align: left;
+   font-size: 30px;
+   line-height: 40px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+}
+
+.Team-Section .content-left .section-title p {
+   text-align: left;
+   font-size: 15px;
+   font-weight: 600;
+   display: inline-block;
+   color: #0e0e0e;
+   font-family: 'Poppins', sans-serif;
+   line-height: 26px;
+   margin-bottom: 13px;
+}
+
+.Team-Section .content-right p {
+   font-size: 18px;
+   color: #000;
+   line-height: 30px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.Team-Section .topsec {
+   padding-bottom: 30px;
+   padding-left: 60px;
+   padding-right: 60px;
+}
+
+.team-wrap {
+   width: 300px;
+   margin: 0 auto;
+}
+
+.team-box {
+   background: #fff;
+   border-radius: 10px;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.team-box img {
+   width: 100%;
+   height: 300px;
+   padding: 10px;
+}
+
+.team-social {
+   margin-top: -270px;
+   background: #FF5E14;
+   border-radius: 0 20px 20px 0;
+   position: absolute;
+}
+
+.team-social a {
+   display: flex;
+   margin: 5px;
+   position: relative;
+   text-decoration: none;
+   font-size: 15px;
+   color: #fff;
+   padding: 5px;
+}
+
+.team-social i {
+   line-height: 30px;
+   width: 30px;
+   font-size: 20px;
+   height: 30px;
+   position: relative;
+   text-align: center;
+}
+
+.team-text {
+   text-align: center;
+   color: #fff;
+   padding: 20px;
+}
+
+.team-text h1 {
+   font-size: 25px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+   color: #FF5E14;
+}
+
+.team-text p {
+   font-size: 15px;
+   line-height: 28px;
+   margin-bottom: 0px;
+   color: #000;
+}
+
+/*--------------------------------------------------------------
+   End Team Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   Contact Section
+--------------------------------------------------------------*/
+
+.Contact-Section {
+   padding-bottom: 50px;
+   background: #EFF1FF;
+}
+
+.Contact-Section .content-left .section-title h1 {
+   margin-bottom: 15px;
+   text-align: left;
+   font-size: 30px;
+   line-height: 40px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+}
+
+.Contact-Section .content-left .section-title p {
+   text-align: left;
+   font-size: 15px;
+   font-weight: 600;
+   display: inline-block;
+   color: #0e0e0e;
+   font-family: 'Poppins', sans-serif;
+   line-height: 26px;
+   margin-bottom: 13px;
+}
+
+.Contact-Section .content-right p {
+   font-size: 18px;
+   color: #000;
+   line-height: 30px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.code-title {
+   display: flex;
+}
+
+.code-line {
+   display: inline-block;
+   width: 50px;
+   height: 4px;
+   background-color: #EF5C29;
+   margin-right: 15px;
+}
+
+.Contact-Section .topsec {
+   padding-bottom: 50px;
+   padding-left: 60px;
+   padding-right: 60px;
+}
+
+.topsec1 {
+   padding: 0 100px;
+}
+
+.Contact-img {
+   width: 95%;
+   margin: 0px auto;
+}
+
+.Contact-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   transition: 0.3s;
+}
+
+.Contact-img img:hover {
+   transform: scale(1.1);
+   transition: 0.3s;
+}
+
+.contact-card-box {
+   display: flex;
+}
+
+.contact-card img {
+   width: 60px;
+   display: block;
+   padding-right: 10px;
+}
+
+.contact-infos {
+   margin-left: 10px;
+}
+
+.contact-name {
+   margin-bottom: 1rem;
+}
+
+.contact-name h2 {
+   font-size: 20px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+}
+
+.contact-text p {
+   font-size: 14px;
+   margin-bottom: 5px;
+   color: #000;
+}
+
+/*--------------------------------------------------------------
+   End Contact Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   Form Section
+--------------------------------------------------------------*/
+
+.Contact-Form .section-title p {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.Contact-Form .row {
+   row-gap: 30px;
+   justify-content: center;
+}
+
+.Contact-Form .form-group {
+   position: relative;
+   text-align: center;
+}
+
+.Contact-Form .form-group input,
+.Contact-Form .form-group select {
+   position: relative;
+   z-index: 5;
+   height: 45px;
+   padding: 0 20px;
+   line-height: 44px;
+   border-radius: 0;
+   width: 100%;
+   border: 2px solid #fff;
+   border-radius: 4px;
+   font-size: 14px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   background: #fff;
+}
+
+.Contact-Form .form-group textarea {
+   height: 170px;
+   width: 100%;
+   font-size: 14px;
+   padding: 20px;
+   font-family: 'Poppins', sans-serif;
+   border: 2px solid #fff;
+   margin-bottom: 25px;
+}
+
+.Contact-Form .form-group select {
+   padding: 0px 10px 0px;
+}
+
+.Contact-Form .form-group .country {
+   padding: 0px 10px;
+}
+
+.Contact-Form .orange-btn {
+   width: 100%;
+}
+
+/*--------------------------------------------------------------
+   End Form Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   Map Section
+--------------------------------------------------------------*/
+
+.Map-section {
+   padding-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+   End Map Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Client and SF Web Lead Pages
+--------------------------------------------------------------*/
+
+/* banner-section */
+.banner {
+   background-color: transparent !important;
+   background-image: linear-gradient(180deg, #000000 0%, #F15B2A 100%);
+   padding: 50px 0px 50px 0px;
+   text-align: center;
+}
+
+.lead-section {
+   display: flex;
+   flex-direction: column !important;
+   align-items: center;
+}
+
+.lead-section p {
+   color: #F15B2A;
+   font-size: 18px;
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+
+.lead-section h3 {
+   color: #FFFFFF;
+   font-size: 35px;
+   font-weight: 600;
+   line-height: 45px;
+   margin-bottom: 30px;
+   width: 60%;
+}
+
+.lead-section img {
+   height: auto;
+   width: 60%;
+   max-width: 100%;
+}
+
+.sf-btn {
+   padding: 0px 40px 0px 40px;
+   font-size: 15px;
+   font-weight: 600;
+   line-height: 48px;
+   background: #F15B2A;
+   border-radius: 5px;
+   margin-bottom: 30px;
+}
+
+.sf-btn .fa {
+   margin-left: 8px;
+}
+
+.sf-btn:hover {
+   background: #283A57;
+}
+
+/* service-section-start */
+.service-section.ServiceSec-alter {
+   margin: 60px 0px;
+   background-image: url(../image/SF-web-lead/bg-section-01.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 55px 0px;
+}
+
+.service-section.ServiceSec-alter .badge-title {
+   color: #00D280;
+   font-family: "Roboto", sans-serif;
+   font-size: 18px;
+   font-weight: 600;
+   margin-bottom: 5px;
+   text-transform: capitalize;
+   margin-bottom: 10px !important;
+}
+
+.service-section.ServiceSec-alter .main-title {
+   font-family: "Poppins", sans-serif;
+   font-size: 35px;
+   color: #283A57;
+   font-weight: 600;
+   margin-bottom: 20px !important;
+   text-transform: capitalize;
+}
+
+.service-section.ServiceSec-alter .btn.main-btn {
+   background-color: #F15A2B;
+   color: #fff;
+   font-weight: 700;
+   text-transform: capitalize;
+   font-family: "Roboto", sans-serif;
+   border-radius: 4px;
+   padding: 12px 18px;
+   font-size: 15px;
+}
+
+.service-section.ServiceSec-alter .btn.main-btn:hover {
+   background-color: #283A57 !important;
+   color: #fff;
+}
+
+.service-section.ServiceSec-alter .service-box-section {
+   background: none;
+}
+
+.service-section.ServiceSec-alter .service-box-section .row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.service-section.ServiceSec-alter .service-box-section .row .col-lg-4 {
+   display: flex;
+}
+
+.service-section.ServiceSec-alter .service-box {
+   padding: 30px;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 26px 73px rgba(12, 12, 12, 0.1);
+   transition: all 300ms ease-in-out;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.service-section.ServiceSec-alter .service-box:hover {
+   transform: translateY(-30px);
+   box-shadow: 0 26px 73px rgb(12 12 12 / 30%);
+}
+
+.service-section.ServiceSec-alter .service-box-fitness {
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.service-section.ServiceSec-alter .service-box-fitness i {
+   font-size: 45px;
+   align-items: center;
+   width: 100%;
+   padding: 20px;
+   object-fit: contain;
+}
+
+.service-section.ServiceSec-alter .service-box .main-title {
+   font-size: 24px !important;
+   font-weight: 700;
+}
+
+.service-section.ServiceSec-alter .service-box-section .col-lg-4:nth-child(1) .service-box-fitness {
+   background-color: #FFBC42;
+}
+
+.service-section.ServiceSec-alter .service-box-section .col-lg-4:nth-child(2) .service-box-fitness {
+   background-color: #F67C8F;
+}
+
+.service-section.ServiceSec-alter .service-box-section .col-lg-4:nth-child(3) .service-box-fitness {
+   background-color: #56D7F4;
+}
+
+.service-section.ServiceSec-alter .service-box-section .col-lg-4:nth-child(4) .service-box-fitness {
+   background-color: #F15B2A;
+}
+
+.service-section.ServiceSec-alter .service-box-section .col-lg-4:nth-child(5) .service-box-fitness {
+   background-color: #30D58B;
+}
+
+.service-section.ServiceSec-alter .service-box-section .col-lg-4:nth-child(6) .service-box-fitness {
+   background-color: #FAFC7A;
+}
+
+/* service-section-end */
+
+/* sales-section */
+.sales-force {
+   background: #F2F2F2;
+   padding: 50px 0px 50px 0px;
+   display: flex;
+   flex-direction: column !important;
+   align-items: center;
+   text-align: center;
+}
+
+.sales-force h3 {
+   color: #283A57 !important;
+   font-size: 35px;
+   line-height: 45px;
+   font-weight: 700;
+   padding: 15px;
+}
+
+.sales-force img {
+   height: auto;
+   max-width: 100%;
+   width: 640px;
+}
+
+/* lead-work */
+.lead-work {
+   padding: 50px 0px 50px 0px;
+}
+
+.works-section {
+   margin-bottom: 45px;
+}
+
+.lead-work h3 {
+   color: #283A57 !important;
+   font-size: 35px;
+   line-height: 45px;
+   font-weight: 700;
+   padding: 15px;
+   text-align: center;
+}
+
+.works-card {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   width: 100%;
+   height: 100%;
+   padding: 35px 60px;
+   background: #222;
+   color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 6px 21px rgba(0, 0, 0, 0.32);
+}
+
+.works-card:hover {
+   background: #d1651a !important;
+}
+
+.works-card h5 {
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.works-card i {
+   font-size: 65px;
+   color: #F15B2A;
+   transition: all 300ms linear 0ms;
+   transform: translate(0, 5%);
+}
+
+.works-card:hover.works-card i {
+   color: #fff;
+   transform: translate(0, -5%);
+}
+
+/*  form-section */
+.let-sales-form {
+   padding: 50px 0px 50px 0px;
+   background: #E8F8FF;
+}
+
+.let-sales-form form {
+   background: #222426;
+   border: 1px solid rgba(134, 134, 134, 0.6);
+   max-width: 80%;
+   margin: auto;
+   padding: 50px;
+}
+
+.let-sales-form .form-group label {
+   color: #FFFFFF;
+   font-size: 17px;
+}
+
+.let-sales-form h3 {
+   text-align: center;
+   color: #283A57 !important;
+   font-size: 35px;
+   line-height: 45px;
+   font-weight: 700;
+   padding: 15px;
+}
+
+.e-input {
+   width: 100%;
+   border: 0;
+   border-bottom: 1px solid #dadadb;
+   border-radius: 5px;
+   background: #bcbcbd;
+   color: #0e0e0e !important;
+   margin-bottom: 25px;
+   margin-top: 10px;
+   outline: none;
+   -webkit-transition: all 0.4s;
+   -o-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   transition: all 0.4s;
+   font-size: 15px;
+   font-weight: 400;
+   padding: 12px 18px;
+}
+
+input::placeholder,
+textarea::placeholder {
+   color: #0e0e0e !important;
+}
+
+.org-btn {
+   font-size: 15px;
+   font-weight: 700;
+   color: #fff;
+   line-height: 51px;
+   padding: 0px 20px;
+   background: linear-gradient(90deg, #d1651a 0%, #f15b2a 50%, #d1651a);
+   border: none;
+   border-radius: 5px;
+   font-weight: 700;
+}
+
+/* client-page */
+
+/*--------------------------------------------------------------
+  ClientPg Title and ClientPg Before
+--------------------------------------------------------------*/
+
+.ClientPg-Title h2 {
+   font-size: 35px;
+   font-weight: 700;
+   line-height: 44px;
+   color: #0e0e0e;
+   margin-bottom: 25px;
+   position: relative;
+   width: 100%;
+   font-family: 'Poppins', sans-serif;
+}
+
+/* ------  h2 Padding when using ClientPg Before class ------ */
+.ClientPg-Title.ClientBg-before h2 {
+   padding-left: 80px;
+}
+
+/* ------  Add ClientBg-before class with ClientPg Title for heading left line ------ */
+.ClientPg-Title.ClientBg-before h2:before {
+   content: "";
+   width: 54px;
+   height: 3px;
+   position: absolute;
+   top: 20px;
+   left: 0;
+   background-color: #d1651a;
+}
+
+.teams {
+   padding: 100px 0px 70px 0px;
+   background: #E4EAEE;
+}
+
+.teams.row {
+   gap: 20px 0px;
+   justify-content: space-between;
+}
+
+.team-para {
+   padding: 20px 40px;
+   font-size: 18px;
+   line-height: 34px;
+}
+
+.CR-teams-Img img {
+   border-radius: 5px;
+   -webkit-filter: grayscale(100%);
+   filter: grayscale(100%);
+}
+
+.CR-teams-Img img:hover {
+   filter: grayscale(0%);
+}
+
+.teams-Inner {
+   position: relative;
+   margin: 30px 0px 125px 0px;
+}
+
+.CR-teams-Cont {
+   background-color: #fff;
+   text-align: center !important;
+   border-radius: 5px;
+   border-radius: 5px;
+   box-shadow: 0 13px 29px rgba(0, 0, 0, 0.1);
+   padding: 20px 20px;
+   height: 100px;
+   width: auto;
+   position: absolute;
+   top: 88%;
+   left: 20px;
+   right: 30px;
+}
+
+.CR-teams-Cont h3 {
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.CR-teams-Cont h3:hover {
+   color: #f15b2a;
+}
+
+.item-position {
+   font-size: 14px !important;
+   color: #737272;
+}
+
+.CR-teams-Cont:hover {
+   height: 112px;
+}
+
+/*--------------------------------------------------------------
+   End Client and SF Web Lead Pages
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Microsoft and Salesforce Dropdown Pages
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Windows-Page
+--------------------------------------------------------------*/
+.About-Section.windows h6 {
+   font-size: 11px;
+   text-transform: uppercase;
+   line-height: 26px;
+   letter-spacing: 3px;
+   margin-bottom: 13px;
+   color: #000;
+   font-family: 'Poppins', sans-serif;
+}
+
+.About-Section.windows h4 {
+   font-size: 30px;
+   line-height: 40px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+
+.About-Section.windows .About-content p {
+   line-height: 2;
+   color: #000;
+   font-size: 17px;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* ------  Windows Card Section  ------ */
+
+.window-page-card-sec {
+   padding: 50px 0px;
+}
+
+.window-page-card-sec .row {
+   row-gap: 50px;
+}
+
+.window-page-card-sec .window-box {
+   display: flex;
+   flex-wrap: nowrap;
+   padding: 32px 16px 32px 34px;
+   position: relative;
+   z-index: 1;
+   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+   height: 100%;
+}
+
+.window-page-card-sec .window-box::before {
+   content: '';
+   z-index: -1;
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 5px;
+   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+   background-color: #f15b2a;
+}
+
+.window-page-card-sec .window-box:hover::before {
+   height: 100%;
+}
+
+.window-page-card-sec .window-box .box-icon {
+   line-height: 1;
+   margin-right: 20px;
+   color: #f15b2a;
+}
+
+.window-page-card-sec .window-box:hover .box-icon {
+   color: #fff;
+}
+
+.window-page-card-sec .window-box .box-icon i {
+   font-size: 42px;
+   transition: all 300ms linear 0ms;
+}
+
+.window-page-card-sec .window-box .box-cont {
+   position: relative;
+}
+
+.window-page-card-sec .window-box .box-cont h3 {
+   font-size: 22px;
+   margin-bottom: 7px;
+   transition: all 300ms linear 0ms;
+   color: #000;
+   font-weight: 700;
+   font-family: 'Poppins', sans-serif;
+}
+
+.window-page-card-sec .window-box:hover .box-cont h3 {
+   color: #fff;
+}
+
+.window-page-card-sec .window-box .box-cont p {
+   line-height: 1.625;
+   color: #000;
+   transition: all 300ms linear 0ms;
+   font-size: 16px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.window-page-card-sec .window-box:hover .box-cont p {
+   color: #fff;
+}
+
+/* ------  End Windows Card Section  ------ */
+
+/* ------  Why Choose Windows Section  ------ */
+
+.why-choose-windows-sec {
+   padding: 50px 0px;
+}
+
+.why-choose-windows-sec .row {
+   row-gap: 50px;
+}
+
+.why-choose-windows-sec .left-title-sec {
+   padding-left: 82px;
+   position: relative;
+   display: inline-block;
+}
+
+.why-choose-windows-sec .left-title-sec .Section-title h1 {
+   text-align: left;
+}
+
+.why-choose-windows-sec .left-title-sec::before {
+   content: '';
+   width: 54px;
+   height: 3px;
+   position: absolute;
+   top: 25px;
+   left: 0;
+   background-color: #d1651a;
+}
+
+.why-choose-windows-sec .right-cont-sec p {
+   line-height: 2;
+   color: #000;
+   font-size: 17px;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* ------ End Why Choose Windows Section  ------ */
+
+/* ------  Your Trusted Section  ------ */
+
+.your-trusted-sec {
+   padding: 50px 0px;
+}
+
+.your-trusted-sec .Section-title p {
+   text-align: center;
+   margin: 0 auto;
+   width: 90%;
+   font-size: 18px;
+   color: #000;
+   font-family: 'Roboto', sans-serif;
+}
+
+.your-trusted-sec .row {
+   row-gap: 50px;
+   padding: 50px 0px;
+}
+
+.your-trusted-sec .left-sec-cont .fit-img {
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
+}
+
+.your-trusted-sec .left-sec-cont .fit-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.your-trusted-sec .right-sec-cont h4 {
+   color: #000;
+   font-family: "Roboto", Sans-serif;
+   font-size: 28px;
+   font-weight: 600;
+   line-height: 40px;
+}
+
+.your-trusted-sec .right-sec-cont p {
+   line-height: 1.625;
+   color: #000;
+   font-size: 17px;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* ------  End Your Trusted Section  ------ */
+/*--------------------------------------------------------------
+   End Windows-Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Microsoft-365-Page
+--------------------------------------------------------------*/
+
+.About-Section.Microsoft-365 .About-content .Section-title h1 {
+   text-align: left;
+}
+
+/* ------  Industry Section  ------ */
+
+.Industry-Section.Microsoft-365 {
+   padding: 80px 0px;
+}
+
+/* ------  End Industry Section  ------ */
+
+/* ------  TAWork Section Alter ------ */
+
+.TAWork-Section.Microsoft-365 {
+   padding: 0px 0px 80px !important;
+}
+
+.Section-margin.Microsoft-365 {
+   margin: 0px;
+}
+
+/* ------  End TAWork Section Alter ------ */
+
+/*--------------------------------------------------------------
+   End Microsoft-365-Page
+--------------------------------------------------------------*/
+
+/*-------------------------------------------------------
+   Dynamics-365-page
+-----------------------------------------------------*/
+
+/* ------  Dynamic First Section  ------ */
+
+.Dynamics-first-sec .row {
+   row-gap: 50px;
+}
+
+.Dynamics-first-sec.next {
+   padding: 0px 0px 80px;
+   margin: 0px;
+}
+
+.Dynamics-first-sec .left-title-cont {
+   padding-left: 82px;
+   position: relative;
+   display: inline-block;
+}
+
+.Dynamics-first-sec .left-title-cont .Section-title h1 {
+   text-align: left;
+}
+
+.left-title-cont::before {
+   width: 54px;
+   height: 3px;
+   position: absolute;
+   top: 21px;
+   left: 0;
+   background-color: #d1651a;
+   content: '';
+}
+
+.right-title-cont .fit-img {
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
+}
+
+.right-title-cont .fit-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.left-title-cont.new {
+   padding: 0px;
+   margin-left: 30px;
+}
+
+.left-title-cont.new h1 {
+   padding-left: 82px;
+}
+
+/* ------  End Dynamic First Section  ------ */
+
+/* ------  TAWork Section Alter ------ */
+
+.TAWork-Section.Microsoft-365 {
+   padding: 0px 0px 80px !important;
+}
+
+.About-Section.Microsoft-365 {
+   margin: 80px 0px 0px !important;
+}
+
+/* ------  End TAWork Section Alter ------ */
+
+/* ------  Our Benefits Section ------ */
+
+.Our-Benefits-sec {
+   margin-top: 0px;
+}
+
+.Our-Benefits-sec .row {
+   row-gap: 50px;
+}
+
+.Our-Benefits-sec .white-box {
+   background-color: #fff;
+   padding: 44px 20px;
+   text-align: center;
+   transition: all 300ms linear 0ms;
+   height: 213px;
+   box-shadow: 0 1px 18px rgba(0, 0, 0, 0.11);
+}
+
+.Our-Benefits-sec .white-box:hover {
+   transform: translateY(-10px);
+}
+
+.Our-Benefits-sec .white-box h4 {
+   color: #f15b2a;
+   margin-top: 0px;
+   margin-bottom: 23px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.Our-Benefits-sec .white-box p {
+   color: #000;
+   font-size: 15px;
+   line-height: 26px;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* ------  End Our Benefits Section ------ */
+
+/* ------  Our Solution Section ------ */
+.our-solution-sec .row {
+   row-gap: 50px;
+   align-items: center;
+}
+
+.our-solution-sec .border-design {
+   border: 1px solid #f15b2a;
+   border-radius: 5px;
+   padding: 40px 20px;
+   align-items: center;
+   margin: 20px 0px;
+}
+
+.our-solution-sec .border-design.bdr-line {
+   border: 1px solid #000;
+}
+
+.our-solution-sec .border-design .left-side-title {
+   padding-left: 65px;
+   position: relative;
+}
+
+.our-solution-sec .border-design .left-side-title::before {
+   position: absolute;
+   width: 54px;
+   height: 3px;
+   position: absolute;
+   top: 15px;
+   left: 0;
+   background-color: #d1651a;
+   content: '';
+}
+
+.our-solution-sec .border-design .left-side-title h4 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 28px;
+   line-height: 35px;
+   font-weight: 600;
+}
+
+.our-solution-sec .border-design .right-side-cont p {
+   line-height: 1.65;
+   color: #000;
+   font-size: 17px;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* ------  End Our Solution Section ------ */
+
+/*-------------------------------------------------------
+  End Dynamics-365-page
+-----------------------------------------------------*/
+
+/*--------------------------------------------------------------
+  Security-Page
+--------------------------------------------------------------*/
+
+.About-Section.security .About-content .Section-title h1 {
+   text-align: left;
+}
+
+/* ------  Offer Section Alter ------ */
+.Offer-Section.Security {
+   background: #fff !important;
+   padding-bottom: 80px;
+}
+
+.Offer-Section.Security .row {
+   padding: 40px 50px 0px 50px;
+}
+
+.Offer-Section.Security .Offer-card {
+   background: #f3f7ff;
+   padding: 55px 40px 48px;
+   border: 1px solid #f3f7ff;
+}
+
+.Offer-Section.Security .Offer-card:hover {
+   background: #fff;
+   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+   z-index: 99;
+}
+
+/* ------  End Offer Section Alter ------ */
+
+/*--------------------------------------------------------------
+  End Security-Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Copilot-Page
+--------------------------------------------------------------*/
+
+/* ------  About Section Alter ------ */
+
+.About-Section.Copilo-sec .About-img {
+   width: 65%;
+}
+
+.About-Section.Copilo-sec .About-content .Section-title h1 {
+   text-align: left;
+}
+
+/* ------  End About Section Alter ------ */
+
+/* ------  TAWhychs Section Alter ------ */
+
+.TAWhychs-Section.Copilo-next .About-content {
+   text-align: center;
+}
+
+.TAWhychs-Section.Copilo-next .Section-title {
+   text-align: center;
+}
+
+.TAWhychs-Section.Copilo-next .Section-title p {
+   line-height: 1.625;
+   font-size: 17px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.TAWhychs-Section .TAWhychs-card.Copilot-bg1::before {
+   background: url(../image/Microsoft/BG-01-01.jpg) center / cover no-repeat;
+}
+
+.TAWhychs-Section .TAWhychs-card.Copilot-bg2::before {
+   background: url(../image/Microsoft/BG-02-02.jpg) center / cover no-repeat;
+}
+
+.TAWhychs-Section .TAWhychs-card.Copilot-bg3::before {
+   background: url(../image/Microsoft/BG-03-03.jpg) center / cover no-repeat;
+}
+
+/* ------  End TAWhychs Section Alter ------ */
+
+/* ------  Copilot Section Alter ------ */
+.copilot-form-sec .row {
+   row-gap: 25px;
+   align-items: center;
+}
+
+.copilot-form-sec .cont-left h4 {
+   color: #000000;
+   font-family: "Roboto", Sans-serif;
+   font-size: 28px;
+   font-weight: 600;
+   line-height: 40px;
+}
+
+.copilot-form-sec .cont-left p {
+   line-height: 1.625;
+   font-size: 17px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.copilot-form-sec .form-content {
+   padding: 10px 20px;
+}
+
+.copilot-form-sec .form-content .orange-btn {
+   width: 100%;
+   padding: 0px;
+   margin-top: 30px;
+}
+
+.copilot-form-sec .form-content input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select,
+.nice-select {
+   background-color: #fff;
+   border: 1px solid #d8d8d8;
+   border-radius: 5px;
+   color: #666;
+   padding: 6px 22px;
+   line-height: normal;
+   font-size: 15px;
+   font-weight: 400;
+   height: 51px;
+   transition: all 200ms linear 0ms;
+   width: 100%;
+   outline: none;
+}
+
+.copilot-form-sec .form-content input:focus {
+   border-color: #f15b2a;
+}
+
+.copilot-form-sec .form-content textarea:focus {
+   border-color: #f15b2a;
+}
+
+/* ------  End Copilot Section Alter ------ */
+
+/* ------  Salesforce-Faq ------ */
+
+.Salesforce-Faq .Section-title p {
+   text-align: center;
+   font-size: 17px;
+}
+
+.Salesforce-Faq .FAQ-section {
+   margin-top: 35px;
+}
+
+.Salesforce-Faq .FAQ-section .accordion-flush .accordion-item .accordion-button {
+   font-weight: 700;
+   font-size: 18px;
+   padding: 30px;
+}
+
+.Salesforce-Faq .FAQ-section .accordion-flush .accordion-item .accordion-button.collapsed {
+   border: 1px solid #c7c3c3;
+}
+
+.Salesforce-Faq .FAQ-section .accordion-item {
+   border: none;
+   margin-bottom: 30px;
+   border-left: 5px solid #f15b2a;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0;
+}
+
+.Salesforce-Faq .FAQ-section .accordion-button:focus {
+   box-shadow: none;
+}
+
+.Salesforce-Faq .FAQ-section .accordion-button:not(.collapsed) {
+   color: black;
+   background-color: white;
+   box-shadow: none;
+}
+
+/* ------  End Salesforce-Faq ------ */
+
+/*--------------------------------------------------------------
+   End Copilot-Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   SalesForce Development Page
+--------------------------------------------------------------*/
+
+/* ------  Offer Section Alter ------ */
+
+.Offer-Section .Section-title p {
+   text-align: center;
+   font-size: 17px;
+   margin-bottom: 25px;
+}
+
+.Offer-Section .Offer-card i {
+   display: flex;
+   text-align: center;
+   position: relative;
+   margin: 0 auto;
+   border-radius: 50%;
+   font-size: 40px;
+   width: 100px;
+   height: 100px;
+   align-items: center;
+   justify-content: center;
+}
+
+.Offer-Section .Offer-card i::after {
+   content: "";
+   position: absolute;
+   border-radius: 50%;
+   width: 96px;
+   height: 96px;
+   background-color: transparent;
+}
+
+.Offer-Section .Offer-card .color-1 {
+   color: #f15b2a;
+   background-color: rgba(241, 91, 42, 0.14);
+}
+
+.Offer-Section .Offer-card .color-2 {
+   color: #00D280;
+   background-color: rgba(0, 210, 128, 0.14);
+}
+
+.Offer-Section .Offer-card .color-3 {
+   color: #FFBC42;
+   background-color: rgba(255, 188, 66, 0.14);
+}
+
+/* ------  End Offer Section Alter ------ */
+
+/* ------  Development Service Section Alter ------ */
+
+.development-service-card .row {
+   margin-top: 50px;
+   row-gap: 30px;
+}
+
+.development-service-card.Microsoft-365 {
+   padding: 0px 0px 80px !important;
+}
+
+.Section-margin.Microsoft-365 {
+   margin: 0px;
+}
+
+.development-service-card.Microsoft-365 .Section-title h1 {
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+   font-size: 48px;
+   line-height: 60px;
+   font-weight: 600;
+}
+
+.development-service-card .TAWork-card {
+   display: flex;
+   align-items: flex-start;
+   gap: 20px;
+   width: 100%;
+   height: 100%;
+   flex-wrap: nowrap;
+   padding: 40px 30px;
+   background: #222;
+   border-radius: 7px;
+   box-shadow: 0 6px 21px rgba(0, 0, 0, 0.32);
+}
+
+.development-service-card .TAWork-card:hover {
+   background: #d1651a;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+}
+
+.development-service-card .TAWork-card .TAWork-icon {
+   line-height: normal;
+}
+
+.development-service-card .TAWork-card .TAWork-icon i {
+   font-size: 70px;
+   display: flex;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+   background-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.development-service-card .TAWork-card:hover .TAWork-icon i {
+   background-image: none;
+   -webkit-text-fill-color: #fff;
+}
+
+.development-service-card .TAWork-card .TAWork-cont h4 {
+   font-size: 20px;
+   font-weight: 700;
+   color: #fff;
+   margin: 0px 0px 13px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   font-family: 'Poppins', sans-serif;
+}
+
+.development-service-card .TAWork-card .TAWork-cont p {
+   font-size: 15px;
+   color: #fff;
+   margin: 0px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   text-align: left;
+}
+
+/* ------  End Development Service Section Alter ------ */
+/*--------------------------------------------------------------
+   End SalesForce Development Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   SalesForce Integration Page
+--------------------------------------------------------------*/
+
+/* ------  Integration Box ------ */
+.Integration-box .row {
+   justify-content: center;
+   row-gap: 25px;
+}
+
+.Abt-black-box .black-box {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   width: 100%;
+   height: 138px;
+   flex-wrap: nowrap;
+   padding: 40px 30px;
+   background: #222;
+   border-radius: 7px;
+   box-shadow: 0 6px 21px rgba(0, 0, 0, 0.32);
+   margin-bottom: 20px;
+}
+
+.Abt-black-box .black-box:hover {
+   background: #d1651a;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+}
+
+.Abt-black-box .black-box .TAWork-icon {
+   line-height: normal;
+}
+
+.Abt-black-box .black-box .TAWork-icon i {
+   font-size: 70px;
+   display: flex;
+   background-image: -webkit-linear-gradient(left, #d1651a, #f15b2a);
+   background-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.Abt-black-box .black-box:hover .TAWork-icon i {
+   background-image: none;
+   -webkit-text-fill-color: #fff;
+}
+
+.Abt-black-box .black-box .TAWork-cont p {
+   font-size: 15px;
+   color: #fff;
+   margin: 0px;
+   transition: all 300ms linear 0ms;
+   -webkit-transition: all 300ms linear 0ms;
+   text-align: left;
+}
+
+.Integration-box .About-center-img img {
+   width: 100%;
+   height: 445px;
+   object-fit: contain;
+}
+
+/* ------  End Integration Box ------ */
+
+/*--------------------------------------------------------------
+   End SalesForce Integration Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   SalesForce Training Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   Salesforce Customization Page
+--------------------------------------------------------------*/
+
+/* ------  Salesforce Cloud Products ------ */
+.Salesforce-Cloud-Products .Section-title p {
+   text-align: center;
+   font-size: 17px;
+}
+
+.Salesforce-Cloud-Products .row {
+   margin-top: 35px;
+   justify-content: center;
+   row-gap: 25px;
+}
+
+.Salesforce-Cloud-Products .Cloud-cards {
+   display: flex;
+}
+
+.Salesforce-Cloud-Products .Cloud-cards i {
+   display: inline-block;
+   line-height: 1;
+   margin-right: 17px;
+   font-size: 50px;
+   text-align: center;
+   color: #F15B2A;
+   border-color: #F15B2A;
+}
+
+.Salesforce-Cloud-Products .cloud-color-1 {
+   border-style: solid;
+   border-width: 0px 0px 0px 7px;
+   height: 100%;
+   border-color: #37748F;
+   padding: 20px 20px 20px 20px;
+   background-color: #C6E2FC3B
+}
+
+.Salesforce-Cloud-Products .cloud-color-2 {
+   border-style: solid;
+   border-width: 0px 0px 0px 7px;
+   border-color: #F5D224;
+   height: 100%;
+   padding: 20px 20px 20px 20px;
+   background-color: #CCC40630;
+}
+
+.Salesforce-Cloud-Products .cloud-color-3 {
+   border-style: solid;
+   border-width: 0px 0px 0px 7px;
+   border-color: #27B83E;
+   height: 100%;
+   padding: 20px 20px 20px 20px;
+   background-color: #33DE003B;
+}
+
+.Salesforce-Cloud-Products .Cloud-cards h3 {
+   font-size: 23px;
+   font-weight: 700;
+}
+
+.Salesforce-Cloud-Products .Cloud-cards p {
+   color: #262728;
+   font-size: 16px;
+   line-height: 2;
+}
+
+/* ------  End Salesforce Cloud Products ------ */
+/*--------------------------------------------------------------
+   End Salesforce Customization Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   Salesforce Training Page
+--------------------------------------------------------------*/
+
+/* ------  Salesforce Customer Portal ------ */
+.Salesforce-Customer-Portal {
+   position: relative;
+   background: rgba(0, 0, 0, 82%) url(../image/Salesforce-Training/Customer-Portal-bg-img.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center bottom;
+   background-blend-mode: darken;
+   background-attachment: fixed;
+}
+
+.Salesforce-Customer-Portal .salesforce-heading-cont {
+   padding-left: 40px;
+   position: relative;
+}
+
+.Salesforce-Customer-Portal .salesforce-heading-cont h2 {
+   position: absolute;
+   left: -40px;
+   top: 0px;
+   border-bottom: 4px solid #f15b2a;
+   color: white;
+   transform: rotate(-90deg) translateX(calc(0% - 31px));
+   font-size: 18px;
+   letter-spacing: 0.3em;
+   font-weight: 400;
+   padding-bottom: 4px;
+}
+
+.Salesforce-Customer-Portal .bag-trans-img {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background-image: url(../image/Salesforce-Training/Salesforce-trans-img.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 0.88;
+}
+
+.Salesforce-Customer-Portal .Section-title h1 {
+   text-align: left;
+   color: white;
+}
+
+.Salesforce-Customer-Portal .salesforce-heading-cont p {
+   color: white;
+   font-size: 17px;
+   margin-bottom: 1rem;
+}
+
+.Salesforce-Customer-Portal .count-sec {
+   row-gap: 30px;
+}
+
+.Salesforce-Customer-Portal #Counter_Section .counter-item {
+   text-align: center;
+   display: flex;
+   margin: 0 auto;
+   max-width: 100%;
+   width: 160px;
+   height: 160px;
+   align-items: center;
+   position: relative;
+   border-radius: 60%;
+   justify-content: center;
+   flex-direction: column;
+   z-index: 2;
+}
+
+.Salesforce-Customer-Portal #Counter_Section .counter-item::after {
+   content: '';
+   border-radius: 50%;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   background-color: #2d2c2c;
+   left: 0;
+   z-index: -1;
+   transition: 0.5s;
+}
+
+.Salesforce-Customer-Portal #Counter_Section .counter-item:hover::after {
+   display: none;
+   transition: 0.5s;
+}
+
+.Salesforce-Customer-Portal #Counter_Section .counter-item::before {
+   content: '';
+   border-radius: 50%;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   background-image: -webkit-linear-gradient(left, rgba(209, 101, 26, 0.8), rgba(241, 91, 42, 0.8));
+   left: 0;
+   z-index: -1;
+}
+
+.Salesforce-Customer-Portal #Counter_Section .counter-item h1 {
+   color: white;
+   font-size: 37px;
+}
+
+.Salesforce-Customer-Portal #Counter_Section .counter-item p {
+   color: white;
+   font-size: 14px;
+   font-weight: 400;
+   margin: 0px;
+}
+
+/* ------  End Salesforce Customer Portal ------ */
+
+/* ------  Why Choose Trasol Section ------ */
+.Why-Choose-Trasol {
+   position: relative;
+   background-image: url(../image/Salesforce-Training/Why-Choose-Trasol-bg.jpg);
+   width: 100%;
+   height: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center bottom;
+}
+
+.Why-Choose-Trasol .row {
+   row-gap: 25px;
+   align-items: center;
+   justify-content: center;
+}
+
+.Why-Choose-Trasol .trasol-left-cont {
+   position: relative;
+   border-right: 5px solid;
+   color: white;
+   height: 100%;
+}
+
+.Why-Choose-Trasol .trasol-left-cont li {
+   position: relative;
+   cursor: pointer;
+}
+
+.Why-Choose-Trasol .WhychsTrsl-Content .WhychsTrsl-Item {
+   display: none;
+   padding: 20px 10px;
+}
+
+.Why-Choose-Trasol .WhychsTrsl-Content .WhychsTrsl-Item.WhychsTrsl-Active {
+   display: block;
+}
+
+.Why-Choose-Trasol .trasol-left-cont li::after {
+   position: absolute;
+   content: "";
+   border-right: 10px solid orangered;
+   top: 0px;
+   right: -7px;
+   height: 0px;
+   -webkit-transition: all 250ms linear 0ms;
+   transition: all 250ms linear 0ms;
+}
+
+.Why-Choose-Trasol .trasol-left-cont .WhychsTrsl-Active::after {
+   height: 100%;
+}
+
+.Why-Choose-Trasol .trasol-left-cont li {
+   color: white;
+   padding: 10px 0px;
+   font-size: 21px;
+   font-weight: 500;
+   font-family: 'Poppins', sans-serif;
+}
+
+.Why-Choose-Trasol .trasol-center-cont h2 {
+   color: white;
+   font-size: 27px;
+   margin-bottom: 14px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.Why-Choose-Trasol .trasol-center-cont p {
+   color: white;
+   line-height: 28px;
+   margin-bottom: 0px;
+   font-size: 16px;
+}
+
+.Why-Choose-Trasol .tech-right-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+/* ------  End Why Choose Trasol Section ------ */
+/*--------------------------------------------------------------
+   End Salesforce Training Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+   End Microsoft and Salesforce Dropdown Pages
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   End All Pages Section Expect Services Pages 
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   End All Sub Pages
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Page Common Width Settings
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+   .container {
+      max-width: 1200px;
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 1199px) {
+   .container {
+      max-width: 100%;
+      padding: 0px 20px;
+   }
+}
+
+/*--------------------------------------------------------------
+   Page Common Width Settings
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+   Media Querys
+--------------------------------------------------------------*/
+/*-------------------------------
+   Laptop to Tablet View
+---------------------------------*/
+
+/*-----------  min-width: 1200px  -----------*/
+@media screen and (min-width: 1200px) {
+   body .container {
+      max-width: 1200px;
+      width: 100%;
+   }
+
+   header .container #Primary-Menu .main-menu .sub-menu {
+      opacity: 0;
+      position: absolute;
+      top: 50px !important;
+      left: 0;
+      transition: all 300ms ease-in-out;
+      visibility: hidden;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+      border: none;
+      min-width: 230px;
+      padding: 15px;
+      display: block;
+      transform: scaleY(0);
+      transform-origin: 0 0 0;
+   }
+
+   header .container #Primary-Menu .main-menu-2 .sub-menu-2 {
+      opacity: 0;
+      position: absolute;
+      top: -10px !important;
+      left: 100%;
+      transition: all 300ms ease-in-out;
+      visibility: hidden;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+      border: none;
+      min-width: 230px;
+      padding: 15px;
+      display: block;
+      transform: scaleY(0);
+      transform-origin: 0 0 0;
+   }
+
+   header .container #Primary-Menu .main-menu:hover .sub-menu,
+   header .container #Primary-Menu .main-menu-2:hover .sub-menu-2 {
+      opacity: 1;
+      visibility: visible;
+      transform: scaleY(1);
+   }
+
+   header .container #Primary-Menu li a:hover {
+      color: #F15A2B;
+   }
+}
+
+/*-----------  max-width: 1200px  -----------*/
+@media screen and (max-width: 1200px) {
+
+   /*--------------------------------------------------------------
+      Client Page
+   --------------------------------------------------------------*/
+   .CR-teams-Img img {
+      width: 100%;
+   }
+
+   .teams-Inner {
+      margin-bottom: 99px;
+   }
+
+   .team-para {
+      padding: 0px 10px;
+   }
+
+   /*--------------------------------------------------------------
+      End Client Page
+   --------------------------------------------------------------*/
+}
+
+/*-----------  max-width: 1100px  -----------*/
+@media screen and (max-width: 1100px) {
+
+   /*--------------------------------------------------------------
+      Client Page
+   --------------------------------------------------------------*/
+   .ClientPg-Title h2 {
+      font-size: 30px;
+   }
+
+   .CR-teams-Img img {
+      width: 100%;
+   }
+
+   .teams-Inner {
+      margin-bottom: 99px;
+   }
+
+   .team-para {
+      padding: 0px 10px;
+   }
+
+   /*--------------------------------------------------------------
+      End Client Page
+   --------------------------------------------------------------*/
+}
+
+/*-----------  min-width: 768px and max-width: 1024px  -----------*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+   /* coomon-start */
+   .main-title {
+      font-size: 40px;
+   }
+
+   .mobile {
+      display: block !important;
+   }
+
+   .web {
+      display: none !important;
+   }
+
+   /* common-end */
+   /* tablet-header-start */
+   header {
+      overflow: visible;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      box-shadow: 0 0px 5px rgba(0, 0, 0, 0.15);
+      background: #fff;
+   }
+
+   header .header-inner {
+      justify-content: space-between;
+   }
+
+   header .header-menu .Mbl-Logo {
+      display: inline-block;
+   }
+
+   header .header-inner .logo-brand img {
+      width: 190px;
+   }
+
+   header #Primary-Menu {
+      position: absolute;
+      left: -66%;
+      top: 0;
+      display: block;
+      height: 100vh;
+      width: 45%;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+      padding: 30px 30px 0px 30px;
+      transition: 1s;
+      overflow-y: auto;
+   }
+
+   header #Primary-Menu.slide {
+      left: 0%;
+      transition: 1s;
+      z-index: 1;
+   }
+
+   header #Primary-Menu .main-link {
+      padding: 10px 0px;
+      border-bottom: 1px solid #dddd;
+   }
+
+   header #Primary-Menu li a {
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   header #Primary-Menu li .White-btn {
+      display: none;
+   }
+
+   header #Primary-Menu .main-menu .sub-menu {
+      top: 0px !important;
+      left: -10px !important;
+      background: transparent;
+      padding: 0px 10px;
+      transition: initial;
+      border: none;
+   }
+
+   header #Primary-Menu .main-menu-2 .sub-menu-2 {
+      top: 0px !important;
+      left: 0px !important;
+      background: transparent;
+      padding: 0px 10px;
+      transition: initial;
+      border: none;
+      border: none;
+   }
+
+   /* header #Primary-Menu .main-menu:hover .sub-menu{
+           transform: unset !important;
+       } */
+
+   header #Primary-Menu .main-menu:hover .sub-menu,
+   header #Primary-Menu .main-menu .dropdown-menu.show {
+      position: relative !important;
+   }
+
+   header #Primary-Menu .main-menu .sub-menu li {
+      padding: 0px;
+      display: unset !important;
+   }
+
+   header #Primary-Menu .main-menu-2 .sub-menu-2 li {
+      padding: 0px;
+      display: unset !important;
+   }
+
+   header #Primary-Menu .main-menu .sub-menu li a {
+      color: #000;
+      white-space: wrap;
+   }
+
+   header #Primary-Menu-toggle {
+      display: inline-block;
+      z-index: 1;
+   }
+
+   header #Primary-Menu-toggle.cross .bar:nth-of-type(1) {
+      transform: translateY(6px) rotate(-45deg);
+   }
+
+   header #Primary-Menu-toggle.cross .bar:nth-of-type(3) {
+      transform: translateY(-2px) rotate(45deg);
+   }
+
+   header #Primary-Menu-toggle.cross .bar:nth-of-type(2),
+   header #Primary-Menu-toggle.cross .bar:nth-of-type(4) {
+      opacity: 0;
+   }
+
+   .main-menu .dropdown-toggle.show {
+      color: #F15B2A !important;
+   }
+
+   /* tablet-header-end */
+
+   /* banner-content-start */
+   .banner-section.d-padding {
+      padding: 20px 0px 60px;
+   }
+
+   .banner-content {
+      width: 90%;
+   }
+
+   .banner-title {
+      font-size: 40px;
+   }
+
+   .banner-image {
+      padding: 40px 0px 0px;
+      position: relative;
+   }
+
+   /* banner-content-end */
+   /* feature-section-start */
+   .feature-fit {
+      width: 100%;
+      margin-inline: auto;
+      margin-bottom: 50px;
+   }
+
+   /* fetaure-section-end */
+   /* service-section-start */
+   .service-box-section {
+      background-size: cover;
+      background-position: center;
+   }
+
+   /* service-section-end */
+   /* contact-section-start */
+   .contact-section.d-padding {
+      padding: 50px 0px;
+   }
+
+   /* contact-section-end */
+   /* client-review-section-start */
+   .client-review-box {
+      padding: 20px;
+      margin: 40px 15px 100px;
+   }
+
+   .client-review-slide {
+      padding-bottom: 50px;
+   }
+
+   .client-review-slide .slick-prev {
+      position: absolute;
+      top: 86%;
+      left: 4%;
+   }
+
+   .client-review-slide .slick-next {
+      position: absolute;
+      top: 86%;
+      left: 25%;
+   }
+
+   .client-review-fit {
+      width: 100%;
+   }
+
+   .client-review-fit img {
+      width: 100%;
+      object-fit: contain;
+   }
+
+   /* client-review-section-end */
+   /* send-us-section-start */
+   .send-us-section.d-padding {
+      padding: 100px 0px;
+   }
+
+   /* send-us-section-end */
+   /* footer-start */
+   footer {
+      position: unset;
+   }
+
+   .footer-box .main-title {
+      font-size: 24px !important;
+      margin-bottom: 0px !important;
+      margin: 20px 0px 20px !important;
+   }
+
+   .footer .row {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .footer .row .col-lg-3 {
+      display: flex;
+   }
+
+   .footer-box {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0px;
+      width: 100%;
+   }
+
+   .footer-bottom {
+      margin-top: 0px;
+   }
+
+   /* footer-end */
+}
+
+/*-----------  max-width: 1024px  -----------*/
+@media screen and (max-width: 1024px) {
+
+   /* ------  All Page Common Margin and Padding for Fixed Footer ------ */
+   .Page-MarnBg {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+   }
+
+}
+
+/*-----------  max-width: 992px  -----------*/
+@media screen and (max-width: 992px) {
+
+   /* ------  Common Service Pages About LR Section  ------ */
+   .AboutLR-Section .AboutLR-img img {
+      width: 50%;
+   }
+
+   /* ------  Common Service Pages ADWhy Choose Section  ------ */
+   .ADWhychs-Section .ADWhychs-title .Section-title h1 {
+      font-size: 27px;
+      line-height: 35px;
+   }
+
+   /*--------------------------------------------------------------
+      About Page
+   --------------------------------------------------------------*/
+
+   /* ------  Review Section  ------ */
+   .Review-Section .Review-card {
+      padding: 35px 30px;
+   }
+
+   /*--------------------------------------------------------------
+     End About Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      IconBox Page
+   --------------------------------------------------------------*/
+
+   /* ------  IconBox Section  ------ */
+   .IconBox-Section .Icon-reitems {
+      width: 33.33333333%;
+   }
+
+   /*--------------------------------------------------------------
+      End IconBox Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Website and Mobile App Page
+   --------------------------------------------------------------*/
+
+   /* ------  Banner Section  ------ */
+   .Web_MblApp-Banner .Web_MblApp-title h1 {
+      font-size: 30px;
+   }
+
+   /* ------  MAWork Section  ------ */
+   .MAWork-Section .MAWork-reitems {
+      width: 33.33333333%;
+   }
+
+   /*--------------------------------------------------------------
+      End Website and Mobile App Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Client and SL Web Lead Pages
+   --------------------------------------------------------------*/
+   /* ------  Section Title  ------ */
+   .ClientPg-Title h2 {
+      font-size: 30px;
+   }
+
+   .ClientPg-Title.ClientBg-before h2 {
+      padding-left: 68px;
+   }
+
+   /* banner-section */
+   .lead-section h3 {
+      font-size: 25px;
+      line-height: 30px;
+   }
+
+   /* sales-section  */
+   .sales-force h3 {
+      font-size: 25px;
+      line-height: 30px;
+   }
+
+   /*  form-section */
+   .let-sales-form h3 {
+      font-size: 25px;
+      line-height: 30px;
+   }
+
+   /* service-section-start */
+   .service-section.ServiceSec-alter .main-title {
+      font-size: 25px;
+   }
+
+   /* client-page */
+   .ClientPg-Title h2 {
+      font-size: 25px;
+   }
+
+   .CR-teams-Img img {
+      width: 100%;
+   }
+
+   .teams-Inner {
+      margin-bottom: 99px;
+   }
+
+   .team-para {
+      padding: 0px 10px;
+   }
+
+   /*--------------------------------------------------------------
+      End Client and SL Web Lead Pages
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Saleforce Training Page
+   --------------------------------------------------------------*/
+   /*---------- Salesforce-Customer-Portal -----------*/
+
+   .Salesforce-Customer-Portal .salesforce-heading-cont {
+      padding-left: 0px;
+   }
+   
+   .Salesforce-Customer-Portal .salesforce-heading-cont h2 {
+      display: none;
+   }
+
+   #Counter_Section .counter-item {
+      width: 55%;
+   }
+
+   /*---------- Why-Choose-Trasol -----------*/
+   .Why-Choose-Trasol .trasol-center-cont h2 {
+      font-size: 25px;
+   }
+
+   /*--------------------------------------------------------------
+      End Saleforce Training Page
+   --------------------------------------------------------------*/
+}
+
+/*-------------------------------
+   End Laptop to Tablet View
+---------------------------------*/
+
+/*-------------------------------
+   Tablet View
+---------------------------------*/
+
+/*-----------  max-width: 767px  -----------*/
+@media screen and (max-width:767px) {
+
+   /* common-styles-mobile */
+   .main-title {
+      font-size: 34px;
+   }
+
+   .mobile {
+      display: block !important;
+   }
+
+   .web {
+      display: none !important;
+   }
+
+   /* common-styles-mobile-end */
+
+   /* header-style-start */
+   header {
+      overflow: visible;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 100%;
+      box-shadow: 0 0px 5px rgba(0, 0, 0, 0.15);
+      background: #fff;
+   }
+
+   header .header-inner .logo-brand img {
+      width: 170px;
+   }
+
+   header .header-inner {
+      justify-content: space-between;
+   }
+
+   header .header-menu .Mbl-Logo {
+      display: inline-block;
+   }
+
+   header #Primary-Menu {
+      position: absolute;
+      left: -66%;
+      top: 0;
+      display: block;
+      height: 100vh;
+      width: 66%;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+      padding: 20px 20px 0px 1.5rem;
+      transition: 1s;
+      overflow-y: auto;
+      transition: 500ms;
+   }
+
+   header #Primary-Menu.slide {
+      left: 0%;
+   }
+
+   header #Primary-Menu .main-link {
+      padding: 10px 0px;
+      border-bottom: 1px solid #dddd;
+   }
+
+   header #Primary-Menu li a {
+      font-size: 16px;
+      font-weight: 600;
+      position: relative;
+      font-family: "Poppins", sans-serif;
+      color: #000;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   header #Primary-Menu .main-menu .sub-menu {
+      top: 0px !important;
+      left: -10px !important;
+      background: transparent;
+      padding: 0px 10px;
+      transition: initial;
+      border: none;
+      padding-right: 0px;
+   }
+
+   header #Primary-Menu .main-menu-2 .sub-menu-2 {
+      top: 0px !important;
+      left: 0px !important;
+      background: transparent;
+      padding: 0px 10px;
+      transition: initial;
+      padding-right: 0px;
+      border: none;
+   }
+
+   header #Primary-Menu .main-menu:hover .sub-menu,
+   header #Primary-Menu .main-menu .dropdown-menu.show {
+      position: relative !important;
+   }
+
+   header #Primary-Menu .main-menu-2:hover .sub-menu-2,
+   header #Primary-Menu .main-menu-2 .dropdown-menu.show {
+      position: relative !important;
+   }
+
+   header #Primary-Menu .main-menu .sub-menu li {
+      margin-top: 10px;
+      padding: 0px;
+      display: unset !important;
+   }
+
+   header #Primary-Menu .main-menu-2 .sub-menu-2 li {
+      margin-top: 10px;
+      padding: 0px;
+      display: unset !important;
+   }
+
+   header #Primary-Menu .main-menu .sub-menu li a {
+      color: #000;
+      white-space: wrap;
+   }
+
+   header #Primary-Menu .main-menu-2 .sub-menu-2 li a {
+      color: #000;
+      white-space: wrap;
+   }
+
+   header #Primary-Menu .main-menu .sub-menu li:hover a {
+      color: #F15A2B;
+   }
+
+   header #Primary-Menu .main-menu-2 .sub-menu-2 li:hover a {
+      color: #F15A2B;
+   }
+
+   header #Primary-Menu-toggle {
+      display: inline-block;
+   }
+
+   header #Primary-Menu-toggle.cross .bar:nth-of-type(1) {
+      transform: translateY(6px) rotate(-45deg);
+   }
+
+   header #Primary-Menu-toggle.cross .bar:nth-of-type(3) {
+      transform: translateY(-2px) rotate(45deg);
+   }
+
+   header #Primary-Menu-toggle.cross .bar:nth-of-type(2),
+   header #Primary-Menu-toggle.cross .bar:nth-of-type(4) {
+      opacity: 0;
+   }
+
+   .main-menu .dropdown-toggle.show {
+      color: #F15B2A !important;
+   }
+
+   .main-menu-2 .dropdown-toggle.show {
+      color: #F15B2A !important;
+   }
+
+   /* header-style-end */
+
+   /* banner-style-start */
+   .banner-section.d-padding {
+      padding: 55px 0px 10px;
+   }
+
+   .banner-content {
+      width: 100%;
+   }
+
+   .banner-title {
+      font-size: 37px;
+   }
+
+   /* banner-style-end */
+   /* feature-section-start */
+   .feature-fit {
+      margin-bottom: 50px;
+   }
+
+   /* feature-section-end */
+   /* contact-section-start */
+   .contact-section.d-padding {
+      padding: 30px 0px;
+   }
+
+   .contact-section .main-text.text-start {
+      border-right: none;
+      font-size: 18px;
+   }
+
+   /* contact-section-end */
+   /* client-review-section */
+   .client-review-box {
+      padding: 30px;
+      margin: 40px 20px 120px;
+   }
+
+   .client-review-slide .slick-prev {
+      position: absolute;
+      top: 85%;
+      left: 4%;
+   }
+
+   .client-review-slide .slick-next {
+      position: absolute;
+      top: 85%;
+      left: 24%;
+   }
+
+   .client-review-fit {
+      width: 100%;
+   }
+
+   .client-review-fit img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+   }
+
+   /* client-review-section-end */
+   /* send-us-section-start */
+   .send-us-section.d-padding {
+      padding: 100px 0px;
+   }
+
+   /* send-us-section-end */
+   /* footer-start */
+   footer {
+      position: unset;
+   }
+
+   .footer-box {
+      margin: 20px 0px;
+   }
+
+   .footer-box .main-title {
+      margin: 0px 0px 35px !important;
+   }
+
+   .footer-box .main-text {
+      font-size: 16px;
+      margin: 20px 0px !important;
+   }
+
+   .footer-fit {
+      width: 60%;
+   }
+
+   /* footer-end */
+}
+
+/*-----------  max-width: 768px  -----------*/
+
+@media screen and (max-width: 768px) {
+
+   /* ------  Header Setion  ------ */
+   header #Primary-Menu.slide {
+      width: 100%;
+   }
+
+   /* ------  All Page Banner  ------ */
+   .All-Page-Banner .BnrPage-Title h1 {
+      font-size: 30px;
+   }
+
+   /* ------  Common Service Pages About LR Section  ------ */
+   .AboutLR-Section .AboutLR-img img {
+      width: 100%;
+   }
+
+   .AboutLR-Section .AboutLR-content p {
+      font-size: 17px;
+      line-height: 28px;
+   }
+
+   .AboutLR-Section.AbtSectle-Alter .Section-title h1 {
+      font-size: 25px;
+      margin-bottom: 15px;
+   }
+
+   .AboutLR-Section.AbtSectle-Border .Section-title h1 {
+      font-size: 25px;
+      margin-bottom: 15px;
+   }
+
+   .AboutLR-Section.AbtSectle-Border .About-border {
+      padding: 20px 15px;
+   }
+
+   /* ------  Common Service Pages CTA Section  ------ */
+   .CTA-Section .Cta-card {
+      padding: 30px 20px;
+   }
+
+   .CTA-Section .Cta-card h5 {
+      font-size: 20px;
+   }
+
+   /* ------  Common Service Pages ADWhy Choose Section  ------ */
+   .ADWhychs-Section .ADWhychs-title .Section-title h1 {
+      font-size: 25px;
+      line-height: 38px;
+   }
+
+   .ADWhychs-Section .ADWhychs-cont p {
+      font-size: 17px;
+      line-height: 28px;
+   }
+
+   /* ------  Common Pages TAWhy Choose Section  ------ */
+   .TAWhychs-Section .TAWhychs-card {
+      padding: 30px 15px 30px;
+   }
+
+   .TAWhychs-Section .TAWhychs-card .TAWhychs-cont h4 {
+      font-size: 21px;
+   }
+
+   /*--------------------------------------------------------------
+      About Page
+   --------------------------------------------------------------*/
+
+   /* ------  Timeline Section  ------ */
+   .Timeline-Section .Timeline-history {
+      padding-top: 120px;
+      margin: 40px auto 0px;
+   }
+
+   .Timeline-Section .Timeline-content .TL-item {
+      padding-right: 40px;
+   }
+
+   .Timeline-Section .Timeline-content .TL-right .TL-item:nth-child(1) {
+      margin-bottom: 66px;
+   }
+
+   .Timeline-Section .Timeline-content .TL-right .TL-item:nth-child(2) {
+      margin-bottom: 133px;
+   }
+
+   .Timeline-Section .Timeline-content .TL-right .TL-item:nth-child(4) {
+      margin-bottom: 20px;
+   }
+
+   .Timeline-Section .Timeline-content .TL-item::before {
+      width: 30px;
+   }
+
+   .Timeline-Section .Timeline-content .TL-right .TL-item {
+      padding-left: 40px;
+   }
+
+   .Timeline-Section .Timeline-content .TL-item .TL-itemcont h3 {
+      font-size: 18px;
+   }
+
+   .Timeline-Section .Timeline-content .TL-item .TL-itemcont p {
+      font-size: 14px;
+   }
+
+   /* ------  Review Section  ------ */
+   .Review-Section .Review-card {
+      padding: 35px 15px;
+      margin: 40px 5px 20px;
+   }
+
+   /*--------------------------------------------------------------
+      End About Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      IconBox Page
+   --------------------------------------------------------------*/
+
+   /* ------  IconBox Section  ------ */
+   .IconBox-Section .Icon-reitems {
+      width: 50%;
+   }
+
+   /*--------------------------------------------------------------
+      End IconBox Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Website and Mobile App Page
+   --------------------------------------------------------------*/
+
+   /* ------  Banner Section  ------ */
+   .Web_MblApp-Banner .Web_MblApp-title h1 {
+      font-size: 24px;
+      line-height: 36px;
+   }
+
+   /* ------  MAWork Section  ------ */
+   .MAWork-Section .MAWork-reitems {
+      width: 50%;
+   }
+
+   /* ------  SalesForm Section  ------ */
+   .SalesForm-Section .SalesForm {
+      padding: 60px 25px;
+   }
+
+   /*--------------------------------------------------------------
+      End Website and Mobile App Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      PC and Laptop Page
+   --------------------------------------------------------------*/
+
+   /* ------  PLWhychs Section  ------ */
+   .PLWhychs-Section .row {
+      row-gap: 40px;
+   }
+
+   .PLWhychs-Section .PLWhychs-card .PLWhychs-Cardinr {
+      padding: 50px 20px 70px;
+      max-width: 100%;
+   }
+
+   .PLWhychs-Section .PLWhychs-card .PLWhychs-cont h4 {
+      font-size: 20px;
+   }
+
+   /*--------------------------------------------------------------
+      End PC and Laptop Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Networking Page
+   --------------------------------------------------------------*/
+
+   /* ------  PLWhychs Section  ------ */
+   .ServiceOffer-Section .Srvcsoff-card {
+      padding: 30px 15px 30px;
+   }
+
+   /*--------------------------------------------------------------
+      End Networking Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Software Licensing Page
+   --------------------------------------------------------------*/
+
+   /* ------  SLWhychs-Section  ------ */
+   .SLWhychs-Section .SLWhychs-card .SLWhychs-cont h4 {
+      font-size: 18px;
+      line-height: normal;
+   }
+
+   /*--------------------------------------------------------------
+      End Software Licensing Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      All Pages Section Expect Services Pages 
+   --------------------------------------------------------------*/
+   .About-Section .About-content .section-title h1 {
+      line-height: 45px;
+      font-size: 30px;
+   }
+
+   .career-card {
+      display: block;
+      padding: 15px;
+   }
+
+   .career-card img {
+      width: 50px;
+   }
+
+   .Industry-Section .apptab button b {
+      font-size: 20px;
+      line-height: 45px;
+   }
+
+   .Industry-Section .apptab button {
+      padding: 20px;
+   }
+
+   .career-infos {
+      margin-left: 12px;
+   }
+
+   .Contact-Section .topsec {
+      padding: 15px 15px;
+   }
+
+   .Team-Section .topsec {
+      padding: 15px 15px;
+   }
+
+   .team-wrap {
+      padding: 0 15px;
+   }
+
+   .contact-card {
+      margin: 10px 0;
+   }
+
+   .Contact-Section {
+      padding: 30px 0;
+   }
+
+   .topsec1 {
+      padding: 0px 30px;
+   }
+
+   .Contact-img img {
+      padding-bottom: 30px;
+   }
+
+   .teams {
+      padding: 60px 0px;
+   }
+
+   /*--------------------------------------------------------------
+      End All Pages Section Expect Services Pages 
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Client and SL Web Lead Pages
+   --------------------------------------------------------------*/
+   /* ------  ClientPg Title  ------ */
+   .ClientPg-Title.ClientBg-before h2:before {
+      width: 40px;
+   }
+
+   /* banner-section */
+   .lead-section h3 {
+      font-size: 22px;
+      line-height: 30px;
+   }
+
+   /* sales-section  */
+   .sales-force h3 {
+      font-size: 22px;
+      line-height: 30px;
+   }
+
+   /*  form-section */
+   .let-sales-form h3 {
+      font-size: 22px;
+      line-height: 30px;
+   }
+
+   /* service-section-start */
+   .service-section.ServiceSec-alter .main-title {
+      font-size: 22px;
+   }
+
+   /* client-page */
+   .ClientPg-Title h2 {
+      font-size: 30px;
+   }
+
+   .CR-teams-Img img {
+      width: 100%;
+   }
+
+   .teams-Inner {
+      margin-bottom: 99px;
+   }
+
+   .team-para {
+      padding: 0px 10px;
+   }
+
+   /*--------------------------------------------------------------
+      End Client and SL Web Lead Pages
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Microsoft and Salesforce Dropdown Pages
+   --------------------------------------------------------------*/
+   /*--------------------------------------------------------------
+      Copilot Page
+   --------------------------------------------------------------*/
+   .Salesforce-Faq .section-title p {
+      font-size: 15px;
+   }
+
+   .copilot-form-sec .cont-left h4 {
+      font-size: 24px;
+   }
+
+   .copilot-form-sec .form-content {
+      padding: 5px 5px;
+   }
+
+   /*--------------------------------------------------------------
+      End Copilot Page
+   --------------------------------------------------------------*/
+   /*--------------------------------------------------------------
+      Dynamic Page
+   --------------------------------------------------------------*/
+
+   .left-title-cont {
+      padding-left: 68px;
+      position: relative;
+      display: inline-block;
+   }
+
+   .left-title-cont p {
+      line-height: 1.65;
+      color: #000;
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif;
+   }
+
+   .our-solution-sec .border-design {
+      padding: 25px 20px;
+   }
+
+   .our-solution-sec .border-design .left-side-title {
+      padding-left: 40px;
+   }
+
+   .our-solution-sec .border-design .left-side-title h4 {
+      font-size: 24px;
+      line-height: 35px;
+   }
+
+   .our-solution-sec .border-design .left-side-title::before {
+      width: 34px;
+   }
+
+   .our-solution-sec .row {
+      row-gap: 20px;
+      align-items: center;
+   }
+
+   .left-title-cont.new h1 {
+      padding-left: 50px;
+   }
+
+   .left-title-cont::before {
+      width: 34px;
+      top: 16px;
+   }
+
+   /*--------------------------------------------------------------
+      End Dynamic Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Window Page
+   --------------------------------------------------------------*/
+
+   .About-Section.windows .About-content p {
+      font-size: 16px;
+   }
+
+   .About-Section .row {
+      align-items: normal;
+   }
+
+   .window-page-card-sec {
+      padding: 0px 0px 50px;
+   }
+
+   .window-page-card-sec .window-box .box-cont h3 {
+      font-size: 17px;
+   }
+
+   .window-page-card-sec .window-box .box-cont p {
+      font-size: 14px;
+   }
+
+   .window-page-card-sec .window-box {
+      padding: 32px 16px 20px 34px;
+   }
+
+   .why-choose-windows-sec .right-cont-sec p {
+      line-height: 2;
+      color: #000;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+   }
+
+   .why-choose-windows-sec {
+      padding: 0px;
+   }
+
+   .your-trusted-sec .section-title p {
+      width: 95%;
+      font-size: 17px;
+   }
+
+   .your-trusted-sec .right-sec-cont h4 {
+      font-size: 24px;
+   }
+
+   .your-trusted-sec .right-sec-cont p {
+      font-size: 16px;
+   }
+
+   .your-trusted-sec .row {
+      padding: 50px 0px 0px;
+   }
+
+   /*--------------------------------------------------------------
+      End Window Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Salesforce Development Page
+   --------------------------------------------------------------*/
+
+   /*---------- Development Service Section Alter -----------*/
+   .development-service-card.Microsoft-365 .Section-title h1 {
+      font-size: 30px;
+      line-height: 40px;
+   }
+
+   /*--------------------------------------------------------------
+     End Salesforce Development Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Saleforce Training Page
+   --------------------------------------------------------------*/
+
+   /*---------- Salesforce-Customer-Portal -----------*/
+
+   .Salesforce-Customer-Portal .salesforce-heading-cont p {
+      font-size: 15px;
+   }
+
+   /*---------- Why-Choose-Trasol -----------*/
+
+   .Why-Choose-Trasol .trasol-left-cont li {
+      font-size: 20px;
+   }
+
+   .Why-Choose-Trasol .trasol-left-cont::after {
+      top: -6px;
+   }
+
+   /*--------------------------------------------------------------
+      Saleforce Training Page
+   --------------------------------------------------------------*/
+   /*--------------------------------------------------------------
+      End Microsoft and Salesforce Dropdown Pages
+   --------------------------------------------------------------*/
+}
+
+/*-------------------------------
+   End Tablet View
+---------------------------------*/
+/*-------------------------------
+   Mobile View
+---------------------------------*/
+
+/*-----------  max-width: 576px  -----------*/
+
+@media screen and (max-width: 576px) {
+
+   /* ------  All Page Banner  ------ */
+   .All-Page-Banner .BnrPage-Title h1 {
+      font-size: 27px;
+      line-height: 1.2;
+   }
+
+   /* ------  Common Service Pages About LR Section  ------ */
+   .AboutLR-Section.AboutLR-GapSign .AbtLR-gslist li {
+      width: 100%;
+   }
+
+   /* ------  Common Service Pages ADWhy Choose Section  ------ */
+   .ADWhychs-Section .ADWhychs-title .Section-title h1 {
+      font-size: 23px;
+      line-height: 38px;
+   }
+
+   /* ------  Common Pages TAWork Section  ------ */
+   .TAWork-Section .TAWork-card {
+      padding: 40px 20px;
+      flex-wrap: wrap;
+   }
+
+   /*--------------------------------------------------------------
+      About Page
+   --------------------------------------------------------------*/
+
+   /* ------  Timeline Section  ------ */
+   .Timeline-Section .Timeline-content .TL-right .TL-item:nth-child(1) {
+      margin-bottom: 30px;
+   }
+
+   .Timeline-Section .Timeline-content .TL-item .TL-itemcont h3 {
+      font-size: 17px;
+   }
+
+   /* ------  Review Section  ------ */
+   .Review-Section .Reviews-list {
+      width: 100%;
+   }
+
+   /*--------------------------------------------------------------
+      End About Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      IconBox Page
+   --------------------------------------------------------------*/
+
+   /* ------  IconBox Section  ------ */
+   .IconBox-Section .Icon-reitems {
+      width: 100%;
+   }
+
+   /*--------------------------------------------------------------
+      End IconBox Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Website and Mobile App Page
+   --------------------------------------------------------------*/
+
+   /* ------  MAWork Section  ------ */
+   .MAWork-Section .MAWork-reitems {
+      width: 100%;
+   }
+
+   /*--------------------------------------------------------------
+      End Website and Mobile App Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Software Licensing Page
+   --------------------------------------------------------------*/
+
+   /* ------  SLWhychs-Section  ------ */
+   .SLWhychs-Section .SLWhychs-card {
+      flex-wrap: wrap;
+   }
+
+   /*--------------------------------------------------------------
+      End Software Licensing Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      All Pages Section Expect Services Pages 
+   --------------------------------------------------------------*/
+   .About-Section .About-content .section-title h1 {
+      line-height: 45px;
+      font-size: 30px;
+   }
+
+   .Industry-Section .content-left .section-title h1 {
+      line-height: 40px;
+      font-size: 25px;
+   }
+
+   .Contact-img img {
+      padding-bottom: 30px;
+   }
+
+   .Career-Section .content-left .section-title h1 {
+      line-height: 40px;
+      font-size: 25px;
+   }
+
+   .About-Section .About-content .About-list li {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 5px;
+   }
+
+   .Offer-Section .Offer-card {
+      padding: 20px;
+   }
+
+   .Offer-Section .Offer-card img {
+      padding-bottom: 20px;
+   }
+
+   .Offer-Section .Offer-card .card-heading h3 {
+      padding: 0px;
+   }
+
+   .About-Section1 {
+      padding: 20px;
+   }
+
+   .About-content1 {
+      padding: 20px;
+   }
+
+   .About-content1 h1 {
+      font-size: 30px;
+      padding: 10px 0;
+      line-height: 40px;
+   }
+
+   .career-card {
+      display: block;
+      padding: 15px;
+   }
+
+   .career-card img {
+      width: 50px;
+   }
+
+   .Industry-Section .apptab button b {
+      font-size: 20px;
+      line-height: 45px;
+   }
+
+   .Industry-Section .apptab button {
+      padding: 20px;
+   }
+
+   .career-infos {
+      margin-left: 12px;
+   }
+
+   .Contact-Section .topsec {
+      padding: 15px 15px;
+   }
+
+   .Team-Section .topsec {
+      padding: 15px 15px;
+   }
+
+   .team-wrap {
+      padding: 0 15px;
+   }
+
+   .contact-card {
+      margin: 10px 0;
+   }
+
+   .Contact-Section {
+      padding: 30px 0;
+   }
+
+   .topsec1 {
+      padding: 0px 30px;
+   }
+
+   /*--------------------------------------------------------------
+      End All Pages Section Expect Services Pages 
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Client and SL Web Lead Pages
+   --------------------------------------------------------------*/
+   /* ------  ClientPg Title  ------ */
+   .ClientPg-Title.ClientBg-before h2 {
+      padding-top: 23px;
+      padding-left: 0px;
+   }
+
+   .ClientPg-Title.ClientBg-before h2:before {
+      width: 50px;
+      top: 1px;
+   }
+
+   /* banner-section */
+   .lead-section h3 {
+      font-size: 22px;
+      line-height: 30px;
+      width: 75%;
+   }
+
+   .sf-btn {
+      padding: 0px 30px 0px 30px;
+   }
+
+   .lead-section img {
+      width: 80%;
+   }
+
+   /* sales-section  */
+   .sales-force {
+      padding: 15px;
+   }
+
+   .sales-force h3 {
+      font-size: 22px;
+      line-height: 30px;
+   }
+
+   /*  works-section */
+   .works-card {
+      padding: 25px 40px;
+   }
+
+   .works-section {
+      margin-bottom: 30px;
+   }
+
+   /*  form-section */
+   .let-sales-form form {
+      padding: 50px 10px;
+   }
+
+   .let-sales-form h3 {
+      font-size: 22px;
+   }
+
+   /* service-section-start */
+   .service-section.ServiceSec-alter .main-title {
+      font-size: 22px;
+   }
+
+   /* client-page */
+   .ClientPg-Title h2 {
+      font-size: 30px;
+   }
+
+   .CR-teams-Img img {
+      width: 100%;
+   }
+
+   .teams-Inner {
+      margin-bottom: 99px;
+   }
+
+   .team-para {
+      padding: 0px 10px;
+   }
+
+   /*--------------------------------------------------------------
+      End Client and SL Web Lead Pages
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Microsoft and Salesforce Dropdown Pages
+   --------------------------------------------------------------*/
+   /*--------------------------------------------------------------
+       Security Page
+   --------------------------------------------------------------*/
+   .Security-Page .About-content p {
+      font-size: 15px !important;
+   }
+
+   .Offer-Section.Security {
+      padding-bottom: 40px;
+   }
+
+   .Offer-Section.Security .row {
+      padding: 20px 15px 0px 15px;
+   }
+
+   /*--------------------------------------------------------------
+      End Security Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Copilot Page
+   --------------------------------------------------------------*/
+   .Salesforce-Faq .FAQ-section .accordion-item {
+      margin-bottom: 20px;
+   }
+
+   /*--------------------------------------------------------------
+      End Copilot Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Dynamic Page
+   --------------------------------------------------------------*/
+
+   .left-title-cont p {
+      font-size: 15px;
+   }
+
+   .Our-Benefits-sec .white-box {
+      height: 230px;
+   }
+
+   .our-solution-sec .border-design {
+      padding: 20px 20px;
+   }
+
+   .our-solution-sec .border-design .left-side-title h4 {
+      font-size: 22px;
+      line-height: 30px;
+   }
+
+   .our-solution-sec .border-design .right-side-cont p {
+      font-size: 15px;
+   }
+
+   .left-title-cont.new h1 {
+      padding-left: 40px;
+   }
+
+   .Dynamics-first-sec.next {
+      padding: 0px 0px 40px;
+   }
+
+   /*--------------------------------------------------------------
+      End Dynamic Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Window Page
+   --------------------------------------------------------------*/
+   .About-Section.windows h4 {
+      font-size: 26px;
+   }
+
+   .About-Section.windows .About-content p {
+      font-size: 15px;
+   }
+
+   .window-page-card-sec .window-box .box-cont h3 {
+      font-size: 15px;
+   }
+
+   .why-choose-windows-sec .row {
+      row-gap: 25px;
+   }
+
+   .why-choose-windows-sec .right-cont-sec p {
+      font-size: 15px;
+   }
+
+   .your-trusted-sec .section-title p {
+      width: 100%;
+      font-size: 15px;
+   }
+
+   .your-trusted-sec .right-sec-cont h4 {
+      font-size: 22px;
+   }
+
+   .your-trusted-sec .right-sec-cont p {
+      font-size: 15px;
+   }
+
+   /*--------------------------------------------------------------
+      End Window Page
+   --------------------------------------------------------------*/
+
+   /*--------------------------------------------------------------
+      Salesforce Development Page
+   --------------------------------------------------------------*/
+   /*---------- Offer Section -----------*/
+   .Offer-Section .Offer-card i {
+      margin-bottom: 16px;
+   }
+
+   /*---------- Development Service Section Alter -----------*/
+   .development-service-card .TAWork-card {
+      padding: 40px 20px;
+   }
+
+   .development-service-card.Microsoft-365 .Section-title h1 {
+      font-size: 27px;
+      line-height: 35px;
+   }
+
+   /*--------------------------------------------------------------
+     End Salesforce Development Page
+  --------------------------------------------------------------*/
+   /*--------------------------------------------------------------
+      Saleforce Training Page
+   --------------------------------------------------------------*/
+
+   /*---------- Salesforce-Cloud-Products -----------*/
+   .Salesforce-Cloud-Products .Section-title p {
+      font-size: 15px;
+   }
+
+   .Salesforce-Cloud-Products .Cloud-cards {
+      flex-direction: column;
+   }
+
+   .Salesforce-Cloud-Products .Cloud-cards i {
+      margin-right: 0px;
+      margin-bottom: 18px;
+   }
+
+   .Salesforce-Cloud-Products .Cloud-cards h3 {
+      font-size: 22px;
+   }
+
+   .Salesforce-Cloud-Products .Cloud-cards p {
+      font-size: 15px;
+   }
+
+   /*---------- Why-Choose-Trasol -----------*/
+   .Why-Choose-Trasol .trasol-left-cont h3 {
+      font-size: 20px;
+   }
+
+   /*--------------------------------------------------------------
+      End Saleforce Training Page
+   --------------------------------------------------------------*/
+   /*--------------------------------------------------------------
+      Microsoft and Salesforce Dropdown Pages
+   --------------------------------------------------------------*/
+}
+
+/*-------------------------------
+   End Mobile View
+---------------------------------*/
+/*--------------------------------------------------------------
+   End Media Querys
+--------------------------------------------------------------*/
